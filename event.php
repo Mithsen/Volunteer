@@ -275,19 +275,19 @@
                                 <div class="form-group row" style="width: 500px;">
 
                                     <div class="col-10">
-                                        School name<input class="form-control" type="text" name="scho" value="" id="example-text-input">
+                                        School name<input class="form-control" type="text" name="scho" value="" id="example-text-input" required>
                                     </div>
                                 </div>
                                 <div class="form-group row" style="width: 500px;">
 
                                     <div class="col-10">
-                                        Address<input class="form-control" type="search" name="addr" value="" id="example-search-input">
+                                        Address<input class="form-control" type="search" name="addr" value="" id="example-search-input" required>
                                     </div>
                                 </div>
                                 <div class="form-group row" style="width: 500px;">
 
                                     <div class="col-10">
-                                        Province<input class="form-control" type="text" value="" name="prov" id="example-text-input">
+                                        Province<input class="form-control" type="text" value="" name="prov" id="example-text-input" required>
                                     </div>
                                 </div>
                                 <div class="form-group row" style="width: 500px;">
@@ -302,29 +302,29 @@
                         
                         <div class="col-xs-12 col-sm-6" style="margin-top: 60px; position: relative; left: 80px;">
                             <fieldset >
-                                <legend style="margin-top: 40px; width: 500px;">Porsonal details:</legend>
+                                <legend style="margin-top: 40px; width: 500px;">Personal details:</legend>
                                 <div class="form-group row" style="width: 500px;">
 
                                     <div class="col-10">
-                                        Name<input class="form-control" type="text" name="pname" value="" id="example-text-input">
+                                        Name<input class="form-control" type="text" name="pname" value="" id="example-text-input" required>
                                     </div>
                                 </div>
                                 <div class="form-group row" style="width: 500px;">
 
                                     <div class="col-10">
-                                        Occupation<input class="form-control" type="search" name="occu" value="" id="example-search-input">
+                                        Occupation<input class="form-control" type="search" name="occu" value="" id="example-search-input" required>
                                     </div>
                                 </div>
                                 <div class="form-group row" style="width: 500px;">
 
                                     <div class="col-10">
-                                        Contact Number<input class="form-control" type="search" name="cont" value="" id="example-search-input">
+                                        Contact Number<input class="form-control" type="search" name="cont" value="" id="example-search-input" required>
                                     </div>
                                 </div>
                                 <div class="form-group row" style="width: 500px;">
 
                                     <div class="col-10">
-                                        Email<input class="form-control" type="search" value="" name="email" id="example-search-input">
+                                        Email<input class="form-control" type="search" value="" name="email" id="example-search-input" required>
                                     </div>
                                 </div>
                                 
