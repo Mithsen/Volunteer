@@ -56,13 +56,13 @@
                         <div class="col-md-3 col-sm-6 col-xs-12 column project-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
                             <article class="column-inner hvr-float-shadow">
                                 <figure class="image-box">
-                                    <a href="#"><img src="images/resource/image-1.jpg" alt="" title="Volunteer"></a>
+                                    <a href="#"><img src="images/causes/1.jpg" alt="" title="Volunteer"></a>
                                     <div class="icon-box"><a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a></div>
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Help to get water in Africa</h3>
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                        <h3>Inadequate educational resources </h3>
+                                        <p>books, text books,  Books for libraries, other stationary(pens, pencils)</p>
                                     </div>
                                     <div class="proj-donation">
                                         <div class="info"><strong>Donation : </strong> $24,241 / $35,000</div>
@@ -78,13 +78,13 @@
                         <div class="col-md-3 col-sm-6 col-xs-12 column project-column wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1000ms">
                             <article class="column-inner hvr-float-shadow">
                                 <figure class="image-box">
-                                    <a href="#"><img src="images/resource/image-2.jpg" alt="" title="Volunteer"></a>
+                                    <a href="#"><img src="images/causes/2.jpg" alt="" title="Volunteer"></a>
                                     <div class="icon-box"><a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a></div>
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Help for education of kids</h3>
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                        <h3>Inadequate sports facilities and equipment </h3>
+                                        <p>Sports wise</p>
                                     </div>
                                     <div class="proj-donation">
                                         <div class="info"><strong>Donation : </strong> $17,241 / $25,000</div>
@@ -100,13 +100,13 @@
                         <div class="col-md-3 col-sm-6 col-xs-12 column project-column wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1000ms">
                             <article class="column-inner hvr-float-shadow">
                                 <figure class="image-box">
-                                    <a href="#"><img src="images/resource/image-3.jpg" alt="" title="Volunteer"></a>
+                                    <a href="#"><img src="images/causes/3.jpeg" alt="" title="Volunteer"></a>
                                     <div class="icon-box"><a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a></div>
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Spend food in Ughanda</h3>
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                        <h3>Shortage of teachers </h3>
+                                        <p>subject wise for different grades</p>
                                     </div>
                                     <div class="proj-donation">
                                         <div class="info"><strong>Donation : </strong> $47241 / $50,000</div>
@@ -122,13 +122,13 @@
                         <div class="col-md-3 col-sm-6 col-xs-12 column project-column wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1000ms">
                             <article class="column-inner hvr-float-shadow">
                                 <figure class="image-box">
-                                    <a href="#"><img src="images/resource/image-4.jpg" alt="" title="Volunteer"></a>
+                                    <a href="#"><img src="images/causes/4.jpg" alt="" title="Volunteer"></a>
                                     <div class="icon-box"><a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a></div>
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Spend for houses in Africa</h3>
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                        <h3>Shortage of non-academic staff </h3>
+                                        <p>librarian, hostel wardens, clerks, cleaners</p>
                                     </div>
                                     <div class="proj-donation">
                                         <div class="info"><strong>Donation : </strong> $37001 / $77,000</div>
@@ -148,13 +148,13 @@
                         <div class="col-md-3 col-sm-6 col-xs-12 column project-column wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
                             <article class="column-inner hvr-float-shadow">
                                 <figure class="image-box">
-                                    <a href="#"><img src="images/resource/image-1.jpg" alt="" title="Volunteer"></a>
+                                    <a href="#"><img src="images/causes/5.jpg" alt="" title="Volunteer"></a>
                                     <div class="icon-box"><a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a></div>
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Help to get water in Africa</h3>
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                        <h3>Water/Electricity</h3>
+                                        <p>Drinking water, no water supply for </p>
                                     </div>
                                     <div class="proj-donation">
                                         <div class="info"><strong>Donation : </strong> $24,241 / $35,000</div>
@@ -170,13 +170,13 @@
                         <div class="col-md-3 col-sm-6 col-xs-12 column project-column wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1000ms">
                             <article class="column-inner hvr-float-shadow">
                                 <figure class="image-box">
-                                    <a href="#"><img src="images/resource/image-2.jpg" alt="" title="Volunteer"></a>
+                                    <a href="#"><img src="images/causes/6.jpg" alt="" title="Volunteer"></a>
                                     <div class="icon-box"><a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a></div>
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Help for education of kids</h3>
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                        <h3>Lack of Sanitary facilities </h3>
+                                        <p>Washrooms</p>
                                     </div>
                                     <div class="proj-donation">
                                         <div class="info"><strong>Donation : </strong> $17,241 / $25,000</div>
@@ -192,13 +192,13 @@
                         <div class="col-md-3 col-sm-6 col-xs-12 column project-column wow fadeInLeft" data-wow-delay="600ms" data-wow-duration="1000ms">
                             <article class="column-inner hvr-float-shadow">
                                 <figure class="image-box">
-                                    <a href="#"><img src="images/resource/image-3.jpg" alt="" title="Volunteer"></a>
+                                    <a href="#"><img src="images/causes/7.jpg" alt="" title="Volunteer"></a>
                                     <div class="icon-box"><a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a></div>
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Spend food in Ughanda</h3>
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                        <h3>Shortage of School furniture</h3>
+                                        <p>chairs, tables, Black/white board, </p>
                                     </div>
                                     <div class="proj-donation">
                                         <div class="info"><strong>Donation : </strong> $47241 / $50,000</div>
@@ -214,13 +214,33 @@
                         <div class="col-md-3 col-sm-6 col-xs-12 column project-column wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1000ms">
                             <article class="column-inner hvr-float-shadow">
                                 <figure class="image-box">
-                                    <a href="#"><img src="images/resource/image-4.jpg" alt="" title="Volunteer"></a>
+                                    <a href="#"><img src="images/causes/8.jpg" alt="" title="Volunteer"></a>
                                     <div class="icon-box"><a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a></div>
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Spend for houses in Africa</h3>
-                                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                                        <h3>Lack of Infrastructure </h3>
+                                        <p>buildings, gates, walls</p> 
+                                    </div>
+                                    <div class="proj-donation">
+                                        <div class="info"><strong>Donation : </strong> $37001 / $77,000</div>
+                                        <div class="bar-outer">
+                                            <div class="bar-inner" data-don-total="77000" data-don-received="37001"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 column project-column wow fadeInLeft" data-wow-delay="900ms" data-wow-duration="1000ms">
+                            <article class="column-inner hvr-float-shadow">
+                                <figure class="image-box">
+                                    <a href="#"><img src="images/causes/9.jpg" alt="" title="Volunteer"></a>
+                                    <div class="icon-box"><a href="#" class="heart-icon img-circle"><span class="flaticon-favorite21"></span></a></div>
+                                </figure>
+                                <div class="lower-part">
+                                    <div class="text">
+                                        <h3>9.	Improper wastage Management </h3>
+                                        <p>Garbage disposal, Drainage system</p>
                                     </div>
                                     <div class="proj-donation">
                                         <div class="info"><strong>Donation : </strong> $37001 / $77,000</div>

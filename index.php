@@ -23,6 +23,14 @@
 
             <!-- Main Header -->
             <?php require 'includes/header.php'; ?>
+			<header class="main-header fixed">
+   
+
+    <!--Header Lower-->
+   
+    <!--Header Lower End-->
+
+</header>
             <!--End Main Header -->
 
 
@@ -129,20 +137,7 @@
                                      data-endeasing="Power4.easeIn"
                                      style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="link-btn"><a href="#" class="theme-btn light-btn">DONATE</a></div></div>
 
-                                <div class="tp-caption lfb tp-resizeme"
-                                     data-x="center" data-hoffset="80"
-                                     data-y="center" data-voffset="110"
-                                     data-speed="1500"
-                                     data-start="1000"
-                                     data-easing="easeOutExpo"
-                                     data-splitin="none"
-                                     data-splitout="none"
-                                     data-elementdelay="0.01"
-                                     data-endelementdelay="0.3"
-                                     data-endspeed="1200"
-                                     data-endeasing="Power4.easeIn"
-                                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="link-btn"><a href="#" class="theme-btn dark-btn">CHECK OUR PROGRAM</a></div></div>
-
+                               
 
                             </li>
 
@@ -191,20 +186,7 @@
                                      data-endeasing="Power4.easeIn"
                                      style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="link-btn"><a href="#" class="theme-btn light-btn">DONATE</a></div></div>
 
-                                <div class="tp-caption lfb tp-resizeme"
-                                     data-x="center" data-hoffset="80"
-                                     data-y="center" data-voffset="110"
-                                     data-speed="1500"
-                                     data-start="1000"
-                                     data-easing="easeOutExpo"
-                                     data-splitin="none"
-                                     data-splitout="none"
-                                     data-elementdelay="0.01"
-                                     data-endelementdelay="0.3"
-                                     data-endspeed="1200"
-                                     data-endeasing="Power4.easeIn"
-                                     style="z-index: 4; max-width: auto; max-height: auto; white-space: nowrap;"><div class="link-btn"><a href="#" class="theme-btn dark-btn">CHECK OUR PROGRAM</a></div></div>
-
+                                
 
                             </li>
 
@@ -249,19 +231,8 @@
                     </article>
 
                     <!--Progress Column-->
-                    <article class="column progress-column">
-                        <div class="pattern-layer"></div>
+                   
 
-                        <div class="column-inner">	
-                            <h3>Our company served over</h3>
-                            <h2>24121012</h2>
-                            <h3 class="museo-font">children in 32 countries</h3>
-                            <br><br>
-                            <div class="text-right link"><a href="#" class="theme-btn btn-style-two">CHECK OUR PROGRAM</a></div>
-                        </div>
-                    </article>
-
-                </div>
             </section>
 
             <!--Two Column-->

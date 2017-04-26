@@ -56,12 +56,12 @@
 
 
                             <!--Tabs Box-->
-                            <div class="tabs-box" style="margin-top: 30px;">
+                            <div class="tabs-box">
 
                                 <!--Tab / Current / january-->
 
 
-                                
+                                <input type="submit">
                                 <div class="hour-box active-box">
                                     <!--<div class="hour">01/01/2016</div>-->
                                     <div class="img-circle circle"><span></span></div>
@@ -269,74 +269,33 @@
                             <!--Tabs Box End-->
 
                         </div>
-                        <div class="col-xs-12 col-sm-6" style="margin-top: 60px;">
-                            <fieldset >
-                                <legend style="margin-top: 40px; width: 500px;">School details:</legend>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        School name<input class="form-control" type="text" name="scho" value="" id="example-text-input">
-                                    </div>
+                        <fieldset class="fieldset" style="  border: 1px solid #ccc; padding: 10px;">
+                           
+}
+                            <legend>Personalia:</legend>
+                            <div class="form-group row" style="width: 60px;">
+                                <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                                <div class="col-10">
+                                    School name<input class="form-control" type="text" value="" id="example-text-input">
                                 </div>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        Address<input class="form-control" type="search" name="addr" value="" id="example-search-input">
-                                    </div>
+                            </div>
+                            <div class="form-group row" style="width: 60px;">
+                                <label for="example-search-input" class="col-2 col-form-label">Search</label>
+                                <div class="col-10">
+                                    <input class="form-control" type="search" value="" id="example-search-input">
                                 </div>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        Province<input class="form-control" type="text" value="" name="prov" id="example-text-input">
-                                    </div>
-                                </div>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        Contact Number<input class="form-control" type="search" value="" id="example-search-input">
-                                    </div>
-                                </div>
-                                
-                            </fieldset>
+                            </div>
+                        </fieldset>
+                        <div style="position: relative; left: 100px;">
+                            
                         </div>
-                        
-                        <div class="col-xs-12 col-sm-6" style="margin-top: 60px; position: relative; left: 80px;">
-                            <fieldset >
-                                <legend style="margin-top: 40px; width: 500px;">Porsonal details:</legend>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        Name<input class="form-control" type="text" name="pname" value="" id="example-text-input">
-                                    </div>
-                                </div>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        Occupation<input class="form-control" type="search" name="occu" value="" id="example-search-input">
-                                    </div>
-                                </div>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        Contact Number<input class="form-control" type="search" name="cont" value="" id="example-search-input">
-                                    </div>
-                                </div>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        Email<input class="form-control" type="search" value="" name="email" id="example-search-input">
-                                    </div>
-                                </div>
-                                
-                            </fieldset>
-                        </div>
-                  
+                    </form>
                     <!--Schedule Box End-->
                     <br>
                     <div class="text-right">
-                        <input type="submit" class="download-btn theme-btn" style="margin-top: 60px;">
+                        <a href="#" class="download-btn theme-btn"><span class="fa fa-file-pdf-o"></span> DOWNLOAD .PDF schedule</a>
                     </div>
-  </form>
+
                 </div>
             </section>
 
@@ -393,7 +352,9 @@
         <script src="js/jquery.mixitup.min.js"></script> <!-- MixIt UP JS -->
         <script src="js/jquery.fancybox.pack.js"></script> <!-- FancyBox -->
         <script src="js/script.js"></script>
+        <!--Start of Tawk.to Script-->
         
+        <!--End of Tawk.to Script-->
 
         <script>
             (function(i, s, o, g, r, a, m) {
