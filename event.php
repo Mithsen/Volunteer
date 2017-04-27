@@ -361,7 +361,7 @@
                         <!--Schedule Box End-->
                         <br>
                         <div class="text-right">
-                            <input type="submit" class="download-btn theme-btn" style="margin-top: 60px;">
+                            <input type="submit" class="download-btn theme-btn" value="SUBMIT" style="margin-top: 60px;">
                         </div>
                     </form>
                 </div>
