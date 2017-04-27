@@ -15,6 +15,11 @@
         <link href="css/responsive.css" rel="stylesheet">
         <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+        <style>
+            .error {
+                color: #FF0000;
+            }
+        </style>
 
     </head>
 
@@ -296,25 +301,25 @@
                                 <div class="form-group row" style="width: 500px;">
 
                                     <div class="col-10">
-                                        School name<input class="form-control" type="text" name="scho" value="" id="example-text-input" required>
+                                        School name<span class="error">*</span><input class="form-control" type="text" name="scho" value="" id="example-text-input" required>
                                     </div>
                                 </div>
                                 <div class="form-group row" style="width: 500px;">
 
                                     <div class="col-10">
-                                        Address<input class="form-control" type="search" name="addr" value="" id="example-search-input" required>
+                                        Address<span class="error">*</span><input class="form-control" type="search" name="addr" value="" id="example-search-input" required>
                                     </div>
                                 </div>
                                 <div class="form-group row" style="width: 500px;">
 
                                     <div class="col-10">
-                                        Province<input class="form-control" type="text" value="" name="prov" id="example-text-input" required>
+                                        Province<span class="error">*</span><input class="form-control" type="text" value="" name="prov" id="example-text-input" required>
                                     </div>
                                 </div>
                                 <div class="form-group row" style="width: 500px;">
 
                                     <div class="col-10">
-                                        Contact Number<input class="form-control" type="search" value="" id="example-search-input">
+                                        Contact Number<span class="error">*</span><input class="form-control" type="search" value="" id="example-search-input">
                                     </div>
                                 </div>
 
@@ -327,7 +332,8 @@
                                 <div class="form-group row" style="width: 500px;">
 
                                     <div class="col-10">
-                                        Name<input class="form-control" type="text" name="pname" value="" id="example-text-input" required>
+                                        Name<span class="error">*</span><input class="form-control" type="text" name="pname" value="" id="example-text-input" required="required">
+                                        
                                     </div>
                                 </div>
                                 <div class="form-group row" style="width: 500px;">
@@ -339,7 +345,7 @@
                                 <div class="form-group row" style="width: 500px;">
 
                                     <div class="col-10">
-                                        Contact Number<input class="form-control" type="search" name="cont" value="" id="example-search-input" required>
+                                        Contact Number<span class="error">*</span><input class="form-control" type="search" name="cont" value="" id="example-search-input" required>
                                     </div>
                                 </div>
                                 <div class="form-group row" style="width: 500px;">
