@@ -61,11 +61,12 @@
                                 <!--Tab / Current / january-->
 
 
-                                
+
                                 <div class="hour-box active-box">
                                     <!--<div class="hour">01/01/2016</div>-->
                                     <div class="img-circle circle"><span></span></div>
                                     <div class="toggle-btn active"><h3>1.Inadequate educational resources</h3></div>
+
                                     <div class="content-box collapsed">
                                         <div class="content">
                                             <ul>
@@ -80,7 +81,9 @@
                                                                 <td><input type="text" id="qty1"></td>
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row();" value="Add Row"></td>
                                                             </tr>
+
                                                         </table>
+                                                        <input type="hidden" name="one" id="one">
                                                     </div>
                                                 </li> <!-- Add class "current" to sub menu items also -->
                                             </ul>
@@ -93,6 +96,7 @@
                                     <!--                                    <div class="hour">03/01/2015</div>-->
                                     <div class="img-circle circle"><span></span></div>
                                     <div class="toggle-btn"><h3>2.Inadequate sports facilities and equipment</h3></div>
+
                                     <div class="content-box">
                                         <div class="content">
                                             <ul>
@@ -109,6 +113,8 @@
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row2();" value="Add Row"></td>
                                                             </tr>
                                                         </table>
+                                                        <input type="hidden" name="two" id="two">
+                                                        
                                                     </div>
                                                 </li> <!-- Add class "current" to sub menu items also -->
                                                 <li>Training coaches:</li>
@@ -123,6 +129,7 @@
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row2c();" value="Add Row"></td>
                                                             </tr>
                                                         </table>
+                                                        <input type="hidden" name="twob" id="twob">
                                                     </div>
                                                 </li>
                                             </ul>
@@ -136,6 +143,7 @@
                                     <!--                                    <div class="hour">03/01/2015</div>-->
                                     <div class="img-circle circle"><span></span></div>
                                     <div class="toggle-btn"><h3>3.Shortage of teachers</h3></div>
+                                    
                                     <div class="content-box">
                                         <div class="content">
                                             <ul>
@@ -151,6 +159,7 @@
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row3();" value="Add Row"></td>
                                                             </tr>
                                                         </table>
+                                                        <input type="hidden" name="three" id="three">
                                                     </div>
                                                 </li> <!-- Add class "current" to sub menu items also -->
                                             </ul>
@@ -178,6 +187,8 @@
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row4();" value="Add Row"></td>
                                                             </tr>
                                                         </table>
+                                                        <input type="hidden" name="four" id="four">
+                                    
                                                     </div>
                                                 </li> <!-- Add class "current" to sub menu items also -->
                                             </ul>
@@ -190,28 +201,33 @@
                                     <!--<div class="hour">10/01/2016</div>-->
                                     <div class="img-circle circle"><span></span></div>
                                     <div class="toggle-btn"><h3>5.Water/Electricity</h3></div>
+                                    
                                     <div class="content-box">
                                         <!--<h6>Water</h6>-->
                                         <input type="checkbox" name="water" id="water">No drinking water/water not suitable for drinking purposes </br>
                                         <!--<h3>Electricity</h3>-->
                                         <input type="checkbox" name="ele" id="ele">No electricity supply for the school
                                     </div>
+                                    <input type="hidden" name="five" id="five">
                                 </div>
 
                                 <div class="hour-box">
                                     <!--<div class="hour">18/01/2015</div>-->
                                     <div class="img-circle circle"><span></span></div>
                                     <div class="toggle-btn"><h3>6.Lack of Sanitary facilities </h3></div>
+                                    
                                     <div class="content-box">
                                         No of washrooms required : <input type='number' name='sen' id='sen' style='width:40px;'>
 
                                     </div>
+                                    <input type="hidden" name="six" id="six">
                                 </div>
 
                                 <div class="hour-box">
                                     <!--<div class="hour">22/01/2016</div>-->
                                     <div class="img-circle circle"><span></span></div>
                                     <div class="toggle-btn"><h3>7.Shortage of School furniture  </h3>
+                                        
                                         <p>chairs, tables, teacher’s desks,  Black/white board, cupboards, library book shelves...</p></div>
                                     <div class="content-box">
                                         <ul>
@@ -227,6 +243,7 @@
                                                             <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row7();" value="Add Row"></td>
                                                         </tr>
                                                     </table>
+                                                    <input type="hidden" name="seven" id="seven">
                                                 </div>
                                             </li> <!-- Add class "current" to sub menu items also -->
                                         </ul>
@@ -236,17 +253,20 @@
                                     <!--<div class="hour">25/01/2015</div>-->
                                     <div class="img-circle circle"><span></span></div>
                                     <div class="toggle-btn"><h3>8.Lack of Infrastructure</h3></div>
+                                    
                                     <div class="content-box">
                                         <input type="checkbox" name="inf1" id="inf1">Lab facilities(computer labs )</br>
                                         <input type="checkbox" name="inf2" id="inf2">Buildings</br>
                                         <input type="checkbox" name="inf3" id="inf3">Internet facility</br>
 
                                     </div>
+                                    <input type="hidden" name="eight" id="eight">
                                 </div>
                                 <div class="hour-box">
                                     <!--<div class="hour">28/01/2015</div>-->
                                     <div class="img-circle circle"><span></span></div>
                                     <div class="toggle-btn"><h3>9.Improper wastage Management </h3></div>
+                                    
                                     <div class="content-box">
                                         <ul>
                                             <li><h4>Garbage disposal</h4></li>
@@ -257,6 +277,7 @@
                                             <li><input type="checkbox" name="garbage1" id="garbage1">Improper Drainage system </li>
                                         </ul>
                                     </div>
+                                    <input type="hidden" name="nine" id="nine">
                                 </div>
 
 
@@ -296,10 +317,10 @@
                                         Contact Number<input class="form-control" type="search" value="" id="example-search-input">
                                     </div>
                                 </div>
-                                
+
                             </fieldset>
                         </div>
-                        
+
                         <div class="col-xs-12 col-sm-6" style="margin-top: 60px; position: relative; left: 80px;">
                             <fieldset >
                                 <legend style="margin-top: 40px; width: 500px;">Personal details:</legend>
@@ -327,16 +348,16 @@
                                         Email<input class="form-control" type="search" value="" name="email" id="example-search-input" required>
                                     </div>
                                 </div>
-                                
+
                             </fieldset>
                         </div>
-                  
-                    <!--Schedule Box End-->
-                    <br>
-                    <div class="text-right">
-                        <input type="submit" class="download-btn theme-btn" style="margin-top: 60px;">
-                    </div>
-  </form>
+
+                        <!--Schedule Box End-->
+                        <br>
+                        <div class="text-right">
+                            <input type="submit" class="download-btn theme-btn" style="margin-top: 60px;">
+                        </div>
+                    </form>
                 </div>
             </section>
 
@@ -393,23 +414,23 @@
         <script src="js/jquery.mixitup.min.js"></script> <!-- MixIt UP JS -->
         <script src="js/jquery.fancybox.pack.js"></script> <!-- FancyBox -->
         <script src="js/script.js"></script>
-        
+
 
         <script>
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
+                                                                    (function(i, s, o, g, r, a, m) {
+                                                                        i['GoogleAnalyticsObject'] = r;
+                                                                        i[r] = i[r] || function() {
+                                                                            (i[r].q = i[r].q || []).push(arguments)
+                                                                        }, i[r].l = 1 * new Date();
+                                                                        a = s.createElement(o),
+                                                                                m = s.getElementsByTagName(o)[0];
+                                                                        a.async = 1;
+                                                                        a.src = g;
+                                                                        m.parentNode.insertBefore(a, m)
+                                                                    })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
 
-            ga('create', 'UA-15521914-3', 'auto');
-            ga('send', 'pageview');
+                                                                    ga('create', 'UA-15521914-3', 'auto');
+                                                                    ga('send', 'pageview');
 
         </script>
 
@@ -430,6 +451,7 @@
                         </tr>";
                 document.getElementById("item1").value = "";
                 document.getElementById("qty1").value = "";
+                document.getElementById("one").value = table_len;
 
             }
             function delete_row(no)
@@ -444,15 +466,16 @@
 
 
                 var table = document.getElementById("table2");
-                var table_len = (table.rows.length) - 1;
-                var row = table.insertRow(table_len).outerHTML = "<tr id='row2" + table_len + "'>\n\
-                        <td ><input type='text' name=item2" + table_len + " id='item_row2" + table_len + "' value=" + item2 + "></td>\n\
-                        <td ><input type='text'  name=qty2" + table_len + " id='qty_row2" + table_len + "' value=" + qty2 + "></td>\n\
-                        <td><input type='button' value='Delete' class='btn btn-outline-warning' onclick='delete_row2(" + table_len + ")'>\n\
+                var table_len2 = (table.rows.length) - 1;
+                var row = table.insertRow(table_len2).outerHTML = "<tr id='row2" + table_len2 + "'>\n\
+                        <td ><input type='text' name=item2" + table_len2 + " id='item_row2" + table_len2 + "' value=" + item2 + "></td>\n\
+                        <td ><input type='text'  name=qty2" + table_len2 + " id='qty_row2" + table_len2 + "' value=" + qty2 + "></td>\n\
+                        <td><input type='button' value='Delete' class='btn btn-outline-warning' onclick='delete_row2(" + table_len2 + ")'>\n\
                         </td>\n\
                         </tr>";
                 document.getElementById("item2").value = "";
                 document.getElementById("qty2").value = "";
+                document.getElementById("two").value = table_len2;
 
             }
             function delete_row2(no)
@@ -467,13 +490,14 @@
 
 
                 var table2c = document.getElementById("table2c");
-                var table_len = (table2c.rows.length) - 1;
-                var row = table2c.insertRow(table_len).outerHTML = "<tr id='row2c" + table_len + "'>\n\
-                        <td ><input type='text' name=sport2" + table_len + " id='sport_row2" + table_len + "' value=" + sport2 + ">\n\
-                        <td><input type='button' value='Delete' class='btn btn-outline-warning' onclick='delete_row2c(" + table_len + ")'>\n\
+                var table_len2c = (table2c.rows.length) - 1;
+                var row = table2c.insertRow(table_len2c).outerHTML = "<tr id='row2c" + table_len2c + "'>\n\
+                        <td ><input type='text' name=sport2" + table_len2c + " id='sport_row2" + table_len2c + "' value=" + sport2 + ">\n\
+                        <td><input type='button' value='Delete' class='btn btn-outline-warning' onclick='delete_row2c(" + table_len2c + ")'>\n\
                         </td>\n\
                         </tr>";
                 document.getElementById("sport2").value = "";
+                document.getElementById("twob").value = table_len2c;
 
             }
             function delete_row2c(no)
@@ -497,6 +521,7 @@
                         </tr>";
                 document.getElementById("subject").value = "";
                 document.getElementById("grade").value = "";
+                document.getElementById("three").value = table3_len;
 
             }
             function delete_row3(no)
@@ -521,6 +546,7 @@
                         </tr>";
                 document.getElementById("category").value = "";
                 document.getElementById("no").value = "";
+                document.getElementById("four").value = table4_len;
 
             }
             function delete_row4(no)
@@ -544,6 +570,7 @@
                         </tr>";
                 document.getElementById("unit").value = "";
                 document.getElementById("uqty").value = "";
+                document.getElementById("seven").value = table7_len;
 
             }
             function delete_row7(no)
