@@ -21,6 +21,7 @@
             }
         </style>
 
+
     </head>
 
     <body>
@@ -68,9 +69,71 @@
 
 
                                 <div class="hour-box active-box">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                Enter your school:
+                                            </td>
+                                            <td>
+                                                <input type ='text' id='txtschool' name="txtschool" class='inputField' style="background:wheat; margin-left: 20px; width: 300px;"  autocomplete='off'>
+
+                                            </td>
+
+                                            <td><input type="button" value="ADD NEW SCHOOL+" onclick="add_schooldetails();" style="margin-left: 50px;">
+
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><div id='schoolList' style='top:-8px; cursor:pointer; background-color:lavender; text-align: center; margin-left: 20px;'></div></td>
+
+                                        </tr>
+
+
+                                    </table>
+
+
                                     <!--<div class="hour">01/01/2016</div>-->
+                                    <div  id="schooldetails" style="margin-top: 60px; display: none">
+                                        <fieldset >
+                                            <legend style="margin-top: 40px; width: 500px;">School details:</legend>
+                                            <div class="form-group row" style="width: 500px;">
+
+                                                <div class="col-10">
+                                                    School name<span class="error">*</span><input class="form-control" type="text" name="scho" value="" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row" style="width: 500px;">
+
+                                                <div class="col-10">
+                                                    Address<span class="error">*</span><input class="form-control" type="search" name="addr" value="" id="example-search-input">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row" style="width: 500px;">
+
+                                                <div class="col-10">
+                                                    Province<span class="error">*</span><input class="form-control" type="text" value="" name="prov" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row" style="width: 500px;">
+
+                                                <div class="col-10">
+                                                    Principal Name<span class="error">*</span><input class="form-control" type="text" value="" name="prov" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row" style="width: 500px;">
+
+                                                <div class="col-10">
+                                                    Contact Number<span class="error">*</span><input class="form-control" type="text" name ="cont" value="" id="example-search-input">
+                                                </div>
+                                            </div>
+
+                                        </fieldset>
+                                    </div>
                                     <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn active"><h3>1.Inadequate educational resources</h3></div>
+
+
+
+                                    <div class="toggle-btn active" style="margin-top: 50px;"><h3>Educational resources</h3></div>
 
                                     <div class="content-box collapsed">
                                         <div class="content">
@@ -82,13 +145,13 @@
                                                                 <th>Quantity</th>
                                                             </tr>
                                                             <tr>
-                                                                <td><input type="text" id="item1"></td>
-                                                                <td><input type="text" id="qty1"></td>
-                                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row();" value="Add Row"></td>
+                                                                <td><input type="text" name ="item1" id="item1"></td>
+                                                                <td><input type="text" name="qty1" id="qty1"></td>
+                                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row();" value="Add Item"></td>
                                                             </tr>
 
                                                         </table>
-                                                        <input type="hidden" name="one" id="one">
+                                                        <input type="hidden" name="one"  value="0" id="one">
                                                     </div>
                                                 </li> <!-- Add class "current" to sub menu items also -->
                                             </ul>
@@ -100,7 +163,7 @@
                                 <div class="hour-box">
                                     <!--                                    <div class="hour">03/01/2015</div>-->
                                     <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn"><h3>2.Inadequate sports facilities and equipment</h3></div>
+                                    <div class="toggle-btn"><h3>Sports facilities and equipment</h3></div>
 
                                     <div class="content-box">
                                         <div class="content">
@@ -115,16 +178,16 @@
                                                             <tr>
                                                                 <td><input type="text" id="item2"></td>
                                                                 <td><input type="text" id="qty2"></td>
-                                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row2();" value="Add Row"></td>
+                                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row2();" value="Add item"></td>
                                                             </tr>
                                                         </table>
-                                                        <input type="hidden" name="two" id="two">
-                                                        
+                                                        <input type="hidden" name="two"  value="0" id="two">
+
                                                     </div>
                                                 </li> <!-- Add class "current" to sub menu items also -->
                                                 <li>Training coaches:</li>
                                                 <li><div>
-                                                        <table class="table table-striped" cellspacing=1 cellpadding=1 id='table2c' border=1 style="width: 30px;">
+                                                        <table class="table table-striped" cellspacing=1 cellpadding=1 id='table2c' border=1 style="width: 31px;">
                                                             <tr>
                                                                 <th>Sport</th>
 
@@ -134,7 +197,7 @@
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row2c();" value="Add Row"></td>
                                                             </tr>
                                                         </table>
-                                                        <input type="hidden" name="twob" id="twob">
+                                                        <input type="hidden" name="twob"  value="0" id="twob">
                                                     </div>
                                                 </li>
                                             </ul>
@@ -147,13 +210,16 @@
                                 <div class="hour-box">
                                     <!--                                    <div class="hour">03/01/2015</div>-->
                                     <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn"><h3>3.Shortage of teachers</h3></div>
-                                    
+                                    <div class="toggle-btn"><h3>Academic, non-academic staff</h3></div>
+
+
                                     <div class="content-box">
                                         <div class="content">
                                             <ul>
-                                                <li><div id='wrapper' style=padding-top:30px;'>
-                                                        <table class="table table-striped" cellspacing=1 cellpadding=3 id='table3' border=1 >
+                                                <li><div id='wrapper' style='padding-top:30px; margin-left: 100px; margin-top: -20px;'>
+                                                        <h4 id="h4tab" style="margin-bottom: 20px; cursor:pointer;">Academic</h4>
+
+                                                        <table class="table table-striped" cellspacing=1 cellpadding=3 id='table3' border=1 style="display: none;">
                                                             <tr>
                                                                 <th>Subject</th>
                                                                 <th>Grade</th>
@@ -164,24 +230,10 @@
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row3();" value="Add Row"></td>
                                                             </tr>
                                                         </table>
-                                                        <input type="hidden" name="three" id="three">
-                                                    </div>
-                                                </li> <!-- Add class "current" to sub menu items also -->
-                                            </ul>
-                                        </div>
+                                                        <input type="hidden" name="three"  value="0" id="three">
+                                                        <h4 id="h4tab2" style="margin-bottom:20px; cursor:pointer;">Non-academic staff</h4>
 
-                                    </div>
-                                </div>
-
-                                <div class="hour-box">
-                                    <!--<div class="hour">05/01/2015</div>-->
-                                    <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn"><h3>4.Shortage of non-academic staff</h3><p>ex: librarian, hostel wardens, clerks,  cleaning staff</p></div>
-                                    <div class="content-box">
-                                        <div class="content">
-                                            <ul>
-                                                <li><div id='wrapper' style=padding-top:30px;'>
-                                                        <table class="table table-striped" cellspacing=1 cellpadding=3 id='table4' border=1 >
+                                                        <table class="table table-striped" cellspacing=1 cellpadding=3 id='table4' border=1 style="display: none;">
                                                             <tr>
                                                                 <th>Staff Category</th>
                                                                 <th>Number of Staff</th>
@@ -192,87 +244,78 @@
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row4();" value="Add Row"></td>
                                                             </tr>
                                                         </table>
-                                                        <input type="hidden" name="four" id="four">
-                                    
+                                                        <input type="hidden" name="four"  value="0" id="four">
+
                                                     </div>
                                                 </li> <!-- Add class "current" to sub menu items also -->
                                             </ul>
                                         </div>
-                                    </div>
 
+                                    </div>
                                 </div>
+
+
 
                                 <div class="hour-box">
                                     <!--<div class="hour">10/01/2016</div>-->
                                     <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn"><h3>5.Water/Electricity</h3></div>
-                                    
-                                    <div class="content-box">
+                                    <div class="toggle-btn"><h3>Infrastructure - Water/Electricity</h3></div>
+
+                                    <div class="content-box" style='padding-top:30px; margin-left: 100px; margin-top: -20px;'>
+                                        <h4 id="h4tab5" style="margin-bottom:20px; cursor:pointer;">Water/Electricity</h4>
+                                        <div id='h4tab5b' style="display: none; padding-top:30px; margin-left: 100px; margin-top: -40px; ">
+                                            <input type="checkbox" name="water" id="water">No drinking water/water not suitable for drinking purposes </br>
+                                            <!--<h3>Electricity</h3>-->
+                                            <input type="checkbox" name="ele" id="ele">No electricity supply for the school
+                                            <input type="hidden" name="five"  value="0" id="five">
+                                        </div>
+                                        <h4 id="h4tab6" style="margin-bottom:20px; cursor:pointer;">Sanitary facilities</h4>
+
+                                        <div id='h4tab6b' style="display: none; padding-top:30px; margin-left: 100px; margin-top: -40px;">
+                                            No of washrooms required : <input type='number' name='sen' id='sen' style='width:40px;'>
+
+                                        </div>
+                                        <input type="hidden" name="six"  value="0" id="six">
+
+                                        <h4 id="h4tab7" style="margin-bottom:20px; cursor:pointer;">School furniture </h4>
+                                        <table class="table table-striped" cellspacing=1 cellpadding=3 id='table7' border=1 style="display: none;">
+                                            <tr>
+                                                <th>Unit type</th>
+                                                <th>Quantity</th>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="text" id="unit"></td>
+                                                <td><input type="text" id="uqty"></td>
+                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row7();" value="Add Row"></td>
+                                            </tr>
+                                        </table>
+                                        <input type="hidden" name="seven"  value="0" id="seven">
+
+
+                                        <h4 id="h4tab8" style="margin-bottom:20px; cursor:pointer;">Other</h4>
+
+                                        <div id='h4tab8b' style="display: none; padding-top:30px; margin-left: 100px; margin-top: -40px;">
+                                            <input type="checkbox" name="inf1" id="inf1">Lab facilities(computer labs )</br>
+                                            <input type="checkbox" name="inf2" id="inf2">Buildings</br>
+                                            <input type="checkbox" name="inf3" id="inf3">Internet facility</br>
+
+                                        </div>
+                                        <input type="hidden" name="eight"  value="0" id="eight">
                                         <!--<h6>Water</h6>-->
-                                        <input type="checkbox" name="water" id="water">No drinking water/water not suitable for drinking purposes </br>
-                                        <!--<h3>Electricity</h3>-->
-                                        <input type="checkbox" name="ele" id="ele">No electricity supply for the school
-                                    </div>
-                                    <input type="hidden" name="five" id="five">
-                                </div>
-
-                                <div class="hour-box">
-                                    <!--<div class="hour">18/01/2015</div>-->
-                                    <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn"><h3>6.Lack of Sanitary facilities </h3></div>
-                                    
-                                    <div class="content-box">
-                                        No of washrooms required : <input type='number' name='sen' id='sen' style='width:40px;'>
 
                                     </div>
-                                    <input type="hidden" name="six" id="six">
+
                                 </div>
 
-                                <div class="hour-box">
-                                    <!--<div class="hour">22/01/2016</div>-->
-                                    <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn"><h3>7.Shortage of School furniture  </h3>
-                                        
-                                        <p>chairs, tables, teacher’s desks,  Black/white board, cupboards, library book shelves...</p></div>
-                                    <div class="content-box">
-                                        <ul>
-                                            <li><div id='wrapper' style=padding-top:30px;'>
-                                                    <table class="table table-striped" cellspacing=1 cellpadding=3 id='table7' border=1 >
-                                                        <tr>
-                                                            <th>Unit type</th>
-                                                            <th>Quantity</th>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><input type="text" id="unit"></td>
-                                                            <td><input type="text" id="uqty"></td>
-                                                            <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row7();" value="Add Row"></td>
-                                                        </tr>
-                                                    </table>
-                                                    <input type="hidden" name="seven" id="seven">
-                                                </div>
-                                            </li> <!-- Add class "current" to sub menu items also -->
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="hour-box">
-                                    <!--<div class="hour">25/01/2015</div>-->
-                                    <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn"><h3>8.Lack of Infrastructure</h3></div>
-                                    
-                                    <div class="content-box">
-                                        <input type="checkbox" name="inf1" id="inf1">Lab facilities(computer labs )</br>
-                                        <input type="checkbox" name="inf2" id="inf2">Buildings</br>
-                                        <input type="checkbox" name="inf3" id="inf3">Internet facility</br>
+                          
 
-                                    </div>
-                                    <input type="hidden" name="eight" id="eight">
-                                </div>
+                             
                                 <div class="hour-box">
                                     <!--<div class="hour">28/01/2015</div>-->
                                     <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn"><h3>9.Improper wastage Management </h3></div>
-                                    
-                                    <div class="content-box">
+                                    <div class="toggle-btn"><h3>Wastage Management </h3></div>
+
+                                    <div class="content-box" style="padding-top:30px; margin-left: 100px; margin-top: -10px;">
                                         <ul>
                                             <li><h4>Garbage disposal</h4></li>
                                             <li><input type="checkbox" name="garbage1" id="garbage1">No proper way of disposing garbage</li>
@@ -282,7 +325,7 @@
                                             <li><input type="checkbox" name="garbage1" id="garbage1">Improper Drainage system </li>
                                         </ul>
                                     </div>
-                                    <input type="hidden" name="nine" id="nine">
+                                    <input type="hidden" name="nine"  value="0" id="nine">
                                 </div>
 
 
@@ -295,68 +338,69 @@
                             <!--Tabs Box End-->
 
                         </div>
-                        <div class="col-xs-12 col-sm-6" style="margin-top: 60px;">
-                            <fieldset >
-                                <legend style="margin-top: 40px; width: 500px;">School details:</legend>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        School name<span class="error">*</span><input class="form-control" type="text" name="scho" value="" id="example-text-input" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        Address<span class="error">*</span><input class="form-control" type="search" name="addr" value="" id="example-search-input" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        Province<span class="error">*</span><input class="form-control" type="text" value="" name="prov" id="example-text-input" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        Contact Number<span class="error">*</span><input class="form-control" type="search" value="" id="example-search-input">
-                                    </div>
-                                </div>
-
-                            </fieldset>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-6" style="margin-top: 60px; position: relative; left: 80px;">
-                            <fieldset >
-                                <legend style="margin-top: 40px; width: 500px;">Personal details:</legend>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        Name<span class="error">*</span><input class="form-control" type="text" name="pname" value="" id="example-text-input" required="required">
-                                        
-                                    </div>
-                                </div>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        Occupation<input class="form-control" type="search" name="occu" value="" id="example-search-input" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        Contact Number<span class="error">*</span><input class="form-control" type="search" name="cont" value="" id="example-search-input" required>
-                                    </div>
-                                </div>
-                                <div class="form-group row" style="width: 500px;">
-
-                                    <div class="col-10">
-                                        Email<input class="form-control" type="search" value="" name="email" id="example-search-input" required>
-                                    </div>
-                                </div>
-
-                            </fieldset>
-                        </div>
+                        <!--                        <div class="col-xs-12 col-sm-6" style="margin-top: 60px;">
+                                                    <fieldset >
+                                                        <legend style="margin-top: 40px; width: 500px;">School details:</legend>
+                                                        <div class="form-group row" style="width: 500px;">
+                        
+                                                            <div class="col-10">
+                                                                School name<span class="error">*</span><input class="form-control" type="text" name="scho" value="" id="example-text-input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row" style="width: 500px;">
+                        
+                                                            <div class="col-10">
+                                                                Address<span class="error">*</span><input class="form-control" type="search" name="addr" value="" id="example-search-input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row" style="width: 500px;">
+                        
+                                                            <div class="col-10">
+                                                                Province<span class="error">*</span><input class="form-control" type="text" value="" name="prov" id="example-text-input">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row" style="width: 500px;">
+                        
+                                                            <div class="col-10">
+                                                                Contact Number<span class="error">*</span><input class="form-control" type="text" name ="cont" value="" id="example-search-input">
+                                                            </div>
+                                                        </div>
+                        
+                                                    </fieldset>
+                                                </div>
+                        
+                                                <div class="col-xs-12 col-sm-6" style="margin-top: 60px; position: relative; left: 80px;">
+                                                    <fieldset >
+                                                        <legend style="margin-top: 40px; width: 500px;">Contact Person   details:</legend>
+                                                        <div class="form-group row" style="width: 500px;">
+                        
+                                                            <div class="col-10">
+                                                                Name<span class="error">*</span><input class="form-control" type="text" name="pname" value="" id="example-text-input">
+                        
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row" style="width: 500px;">
+                        
+                                                            <div class="col-10">
+                                                                Occupation<span class="error">*</span><input class="form-control" type="search" name="occu" value="" id="example-search-input" >
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row" style="width: 500px;">
+                        
+                                                            <div class="col-10">
+                                                                Contact Number<span class="error">*</span><input class="form-control" type="text" name="pcont" value="" id="example-text-input">
+                        
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row" style="width: 500px;">
+                        
+                                                            <div class="col-10">
+                                                                Email<input class="form-control" type="search" value="" name="email" id="example-search-input" >
+                                                            </div>
+                                                        </div>
+                        
+                                                    </fieldset>
+                                                </div>-->
 
                         <!--Schedule Box End-->
                         <br>
@@ -423,20 +467,20 @@
 
 
         <script>
-                                                                    (function(i, s, o, g, r, a, m) {
-                                                                        i['GoogleAnalyticsObject'] = r;
-                                                                        i[r] = i[r] || function() {
-                                                                            (i[r].q = i[r].q || []).push(arguments)
-                                                                        }, i[r].l = 1 * new Date();
-                                                                        a = s.createElement(o),
-                                                                                m = s.getElementsByTagName(o)[0];
-                                                                        a.async = 1;
-                                                                        a.src = g;
-                                                                        m.parentNode.insertBefore(a, m)
-                                                                    })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
+                                                (function(i, s, o, g, r, a, m) {
+                                                    i['GoogleAnalyticsObject'] = r;
+                                                    i[r] = i[r] || function() {
+                                                        (i[r].q = i[r].q || []).push(arguments)
+                                                    }, i[r].l = 1 * new Date();
+                                                    a = s.createElement(o),
+                                                            m = s.getElementsByTagName(o)[0];
+                                                    a.async = 1;
+                                                    a.src = g;
+                                                    m.parentNode.insertBefore(a, m)
+                                                })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
 
-                                                                    ga('create', 'UA-15521914-3', 'auto');
-                                                                    ga('send', 'pageview');
+                                                ga('create', 'UA-15521914-3', 'auto');
+                                                ga('send', 'pageview');
 
         </script>
 
@@ -455,6 +499,11 @@
                         <td><input type='button' value='Delete' class='btn btn-outline-warning' onclick='delete_row(" + table_len + ")'>\n\
                         </td>\n\
                         </tr>";
+                var i = "item" + table_len + 1;
+                var j = "qty" + table_len + 1;
+                document.getElementById("item1").name = i;
+                document.getElementById("qty1").name = j;
+
                 document.getElementById("item1").value = "";
                 document.getElementById("qty1").value = "";
                 document.getElementById("one").value = table_len;
@@ -582,6 +631,65 @@
             function delete_row7(no)
             {
                 document.getElementById("row7" + no + "").outerHTML = "";
+            }
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#txtschool').keyup(function() {
+                    //get the antry value
+                    var query = $(this).val();
+                    //check input is not empty
+                    if (query != '')
+                    {
+                        $.ajax({
+                            url: "schoolSearch.php",
+                            method: "POST",
+                            data: {query: query},
+                            success: function(data)
+                            {
+                                //fill the med list
+                                $('#schoolList').fadeIn();
+                                $('#schoolList').html(data);
+                            }
+                        });
+
+                    }
+                });
+                $(document).on('click', '#lim', function() {
+                    $('#txtschool').val($(this).text());
+                    $('#schoolList').fadeOut();
+
+
+                });
+
+            });
+
+            $("#h4tab").click(function() {
+                $("#table3").toggle();
+            });
+
+            $("#h4tab2").click(function() {
+                $("#table4").toggle();
+            });
+            $("#h4tab8").click(function() {
+                $("#h4tab8b").toggle();
+            });
+            $("#h4tab7").click(function() {
+                $("#table7").toggle();
+            });
+            $("#h4tab6").click(function() {
+                $("#h4tab6b").toggle();
+            });
+            $("#h4tab5").click(function() {
+                $("#h4tab5b").toggle();
+            });
+            
+        </script>
+        <script>
+            function add_schooldetails() {
+
+                //document.getElementById('schooldetails').style.display = 'block';
+                $("#schooldetails").toggle();
             }
         </script>
 

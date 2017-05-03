@@ -15,6 +15,12 @@
         <link href="css/responsive.css" rel="stylesheet">
         <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
         <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+        <style>
+            .error {
+                color: #FF0000;
+            }
+        </style>
+
 
     </head>
 
@@ -56,16 +62,79 @@
 
 
                             <!--Tabs Box-->
-                            <div class="tabs-box">
+                            <div class="tabs-box" style="margin-top: 30px;">
 
                                 <!--Tab / Current / january-->
 
 
-                                <input type="submit">
+
                                 <div class="hour-box active-box">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                Enter your school:
+                                            </td>
+                                            <td>
+                                                <input type ='text' id='txtschool' name="txtschool" class='inputField' style="background:wheat; margin-left: 20px; width: 300px;"  autocomplete='off'>
+
+                                            </td>
+                                            
+                                            <td><input type="button" value="ADD NEW SCHOOL+" onclick="add_schooldetails();" style="margin-left: 50px;">
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><div id='schoolList' style='top:-8px; cursor:pointer; background-color:lavender; text-align: center; margin-left: 20px;'></div></td>
+
+                                        </tr>
+
+
+                                    </table>
+
+
                                     <!--<div class="hour">01/01/2016</div>-->
+                                    <div  id="schooldetails" style="margin-top: 60px; display: none">
+                                        <fieldset >
+                                            <legend style="margin-top: 40px; width: 500px;">School details:</legend>
+                                            <div class="form-group row" style="width: 500px;">
+
+                                                <div class="col-10">
+                                                    School name<span class="error">*</span><input class="form-control" type="text" name="scho" value="" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row" style="width: 500px;">
+
+                                                <div class="col-10">
+                                                    Address<span class="error">*</span><input class="form-control" type="search" name="addr" value="" id="example-search-input">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row" style="width: 500px;">
+
+                                                <div class="col-10">
+                                                    Province<span class="error">*</span><input class="form-control" type="text" value="" name="prov" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row" style="width: 500px;">
+
+                                                <div class="col-10">
+                                                    Principal Name<span class="error">*</span><input class="form-control" type="text" value="" name="prov" id="example-text-input">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row" style="width: 500px;">
+
+                                                <div class="col-10">
+                                                    Contact Number<span class="error">*</span><input class="form-control" type="text" name ="cont" value="" id="example-search-input">
+                                                </div>
+                                            </div>
+
+                                        </fieldset>
+                                    </div>
                                     <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn active"><h3>1.Inadequate educational resources</h3></div>
+
+
+
+                                    <div class="toggle-btn active" style="margin-top: 50px;"><h3>Educational resources</h3></div>
+
                                     <div class="content-box collapsed">
                                         <div class="content">
                                             <ul>
@@ -75,12 +144,14 @@
                                                                 <th>item</th>
                                                                 <th>Quantity</th>
                                                             </tr>
-                                                            <tr>
-                                                                <td><input type="text" id="item1"></td>
-                                                                <td><input type="text" id="qty1"></td>
-                                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row();" value="Add Row"></td>
+                                                       <tr>
+                                                                <td><input type="text" name ="item1" id="item1"></td>
+                                                                <td><input type="text" name="qty1" id="qty1"></td>
+                                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row();" value="Add Item"></td>
                                                             </tr>
+
                                                         </table>
+                                                        <input type="hidden" name="one"  value="0" id="one">
                                                     </div>
                                                 </li> <!-- Add class "current" to sub menu items also -->
                                             </ul>
@@ -92,7 +163,8 @@
                                 <div class="hour-box">
                                     <!--                                    <div class="hour">03/01/2015</div>-->
                                     <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn"><h3>2.Inadequate sports facilities and equipment</h3></div>
+                                    <div class="toggle-btn"><h3>Sports facilities and equipment</h3></div>
+
                                     <div class="content-box">
                                         <div class="content">
                                             <ul>
@@ -106,14 +178,16 @@
                                                             <tr>
                                                                 <td><input type="text" id="item2"></td>
                                                                 <td><input type="text" id="qty2"></td>
-                                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row2();" value="Add Row"></td>
+                                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row2();" value="Add item"></td>
                                                             </tr>
                                                         </table>
+                                                        <input type="hidden" name="two"  value="0" id="two">
+
                                                     </div>
                                                 </li> <!-- Add class "current" to sub menu items also -->
                                                 <li>Training coaches:</li>
                                                 <li><div>
-                                                        <table class="table table-striped" cellspacing=1 cellpadding=1 id='table2c' border=1 style="width: 30px;">
+                                                        <table class="table table-striped" cellspacing=1 cellpadding=1 id='table2c' border=1 style="width: 31px;">
                                                             <tr>
                                                                 <th>Sport</th>
 
@@ -123,6 +197,7 @@
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row2c();" value="Add Row"></td>
                                                             </tr>
                                                         </table>
+                                                        <input type="hidden" name="twob"  value="0" id="twob">
                                                     </div>
                                                 </li>
                                             </ul>
@@ -135,7 +210,10 @@
                                 <div class="hour-box">
                                     <!--                                    <div class="hour">03/01/2015</div>-->
                                     <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn"><h3>3.Shortage of teachers</h3></div>
+                                    <div class="toggle-btn"><h3>Academic, non-academic staff</h3></div>
+                                    <h4>Academic</h4>
+                                    <h4>non-academic staff</h4>
+
                                     <div class="content-box">
                                         <div class="content">
                                             <ul>
@@ -151,6 +229,7 @@
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row3();" value="Add Row"></td>
                                                             </tr>
                                                         </table>
+                                                        <input type="hidden" name="three"  value="0" id="three">
                                                     </div>
                                                 </li> <!-- Add class "current" to sub menu items also -->
                                             </ul>
@@ -178,6 +257,8 @@
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row4();" value="Add Row"></td>
                                                             </tr>
                                                         </table>
+                                                        <input type="hidden" name="four"  value="0" id="four">
+
                                                     </div>
                                                 </li> <!-- Add class "current" to sub menu items also -->
                                             </ul>
@@ -189,29 +270,34 @@
                                 <div class="hour-box">
                                     <!--<div class="hour">10/01/2016</div>-->
                                     <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn"><h3>5.Water/Electricity</h3></div>
+                                    <div class="toggle-btn"><h3>Infrastructure - Water/Electricity</h3></div>
+
                                     <div class="content-box">
                                         <!--<h6>Water</h6>-->
                                         <input type="checkbox" name="water" id="water">No drinking water/water not suitable for drinking purposes </br>
                                         <!--<h3>Electricity</h3>-->
                                         <input type="checkbox" name="ele" id="ele">No electricity supply for the school
                                     </div>
+                                    <input type="hidden" name="five"  value="0" id="five">
                                 </div>
 
                                 <div class="hour-box">
                                     <!--<div class="hour">18/01/2015</div>-->
                                     <div class="img-circle circle"><span></span></div>
                                     <div class="toggle-btn"><h3>6.Lack of Sanitary facilities </h3></div>
+
                                     <div class="content-box">
                                         No of washrooms required : <input type='number' name='sen' id='sen' style='width:40px;'>
 
                                     </div>
+                                    <input type="hidden" name="six"  value="0" id="six">
                                 </div>
 
                                 <div class="hour-box">
                                     <!--<div class="hour">22/01/2016</div>-->
                                     <div class="img-circle circle"><span></span></div>
                                     <div class="toggle-btn"><h3>7.Shortage of School furniture  </h3>
+
                                         <p>chairs, tables, teacher’s desks,  Black/white board, cupboards, library book shelves...</p></div>
                                     <div class="content-box">
                                         <ul>
@@ -227,6 +313,7 @@
                                                             <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row7();" value="Add Row"></td>
                                                         </tr>
                                                     </table>
+                                                    <input type="hidden" name="seven"  value="0" id="seven">
                                                 </div>
                                             </li> <!-- Add class "current" to sub menu items also -->
                                         </ul>
@@ -236,17 +323,20 @@
                                     <!--<div class="hour">25/01/2015</div>-->
                                     <div class="img-circle circle"><span></span></div>
                                     <div class="toggle-btn"><h3>8.Lack of Infrastructure</h3></div>
+
                                     <div class="content-box">
                                         <input type="checkbox" name="inf1" id="inf1">Lab facilities(computer labs )</br>
                                         <input type="checkbox" name="inf2" id="inf2">Buildings</br>
                                         <input type="checkbox" name="inf3" id="inf3">Internet facility</br>
 
                                     </div>
+                                    <input type="hidden" name="eight"  value="0" id="eight">
                                 </div>
                                 <div class="hour-box">
                                     <!--<div class="hour">28/01/2015</div>-->
                                     <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn"><h3>9.Improper wastage Management </h3></div>
+                                    <div class="toggle-btn"><h3>Wastage Management </h3></div>
+
                                     <div class="content-box">
                                         <ul>
                                             <li><h4>Garbage disposal</h4></li>
@@ -257,6 +347,7 @@
                                             <li><input type="checkbox" name="garbage1" id="garbage1">Improper Drainage system </li>
                                         </ul>
                                     </div>
+                                    <input type="hidden" name="nine"  value="0" id="nine">
                                 </div>
 
 
@@ -269,33 +360,76 @@
                             <!--Tabs Box End-->
 
                         </div>
-                        <fieldset class="fieldset" style="  border: 1px solid #ccc; padding: 10px;">
-                           
-}
-                            <legend>Personalia:</legend>
-                            <div class="form-group row" style="width: 60px;">
-                                <label for="example-text-input" class="col-2 col-form-label">Text</label>
-                                <div class="col-10">
-                                    School name<input class="form-control" type="text" value="" id="example-text-input">
+<!--                        <div class="col-xs-12 col-sm-6" style="margin-top: 60px;">
+                            <fieldset >
+                                <legend style="margin-top: 40px; width: 500px;">School details:</legend>
+                                <div class="form-group row" style="width: 500px;">
+
+                                    <div class="col-10">
+                                        School name<span class="error">*</span><input class="form-control" type="text" name="scho" value="" id="example-text-input">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group row" style="width: 60px;">
-                                <label for="example-search-input" class="col-2 col-form-label">Search</label>
-                                <div class="col-10">
-                                    <input class="form-control" type="search" value="" id="example-search-input">
+                                <div class="form-group row" style="width: 500px;">
+
+                                    <div class="col-10">
+                                        Address<span class="error">*</span><input class="form-control" type="search" name="addr" value="" id="example-search-input">
+                                    </div>
                                 </div>
-                            </div>
-                        </fieldset>
-                        <div style="position: relative; left: 100px;">
-                            
+                                <div class="form-group row" style="width: 500px;">
+
+                                    <div class="col-10">
+                                        Province<span class="error">*</span><input class="form-control" type="text" value="" name="prov" id="example-text-input">
+                                    </div>
+                                </div>
+                                <div class="form-group row" style="width: 500px;">
+
+                                    <div class="col-10">
+                                        Contact Number<span class="error">*</span><input class="form-control" type="text" name ="cont" value="" id="example-search-input">
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6" style="margin-top: 60px; position: relative; left: 80px;">
+                            <fieldset >
+                                <legend style="margin-top: 40px; width: 500px;">Contact Person   details:</legend>
+                                <div class="form-group row" style="width: 500px;">
+
+                                    <div class="col-10">
+                                        Name<span class="error">*</span><input class="form-control" type="text" name="pname" value="" id="example-text-input">
+
+                                    </div>
+                                </div>
+                                <div class="form-group row" style="width: 500px;">
+
+                                    <div class="col-10">
+                                        Occupation<span class="error">*</span><input class="form-control" type="search" name="occu" value="" id="example-search-input" >
+                                    </div>
+                                </div>
+                                <div class="form-group row" style="width: 500px;">
+
+                                    <div class="col-10">
+                                        Contact Number<span class="error">*</span><input class="form-control" type="text" name="pcont" value="" id="example-text-input">
+
+                                    </div>
+                                </div>
+                                <div class="form-group row" style="width: 500px;">
+
+                                    <div class="col-10">
+                                        Email<input class="form-control" type="search" value="" name="email" id="example-search-input" >
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </div>-->
+
+                        <!--Schedule Box End-->
+                        <br>
+                        <div class="text-right">
+                            <input type="submit" class="download-btn theme-btn" value="SUBMIT" style="margin-top: 60px;">
                         </div>
                     </form>
-                    <!--Schedule Box End-->
-                    <br>
-                    <div class="text-right">
-                        <a href="#" class="download-btn theme-btn"><span class="fa fa-file-pdf-o"></span> DOWNLOAD .PDF schedule</a>
-                    </div>
-
                 </div>
             </section>
 
@@ -352,25 +486,23 @@
         <script src="js/jquery.mixitup.min.js"></script> <!-- MixIt UP JS -->
         <script src="js/jquery.fancybox.pack.js"></script> <!-- FancyBox -->
         <script src="js/script.js"></script>
-        <!--Start of Tawk.to Script-->
-        
-        <!--End of Tawk.to Script-->
+
 
         <script>
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                        m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
+                                                                    (function(i, s, o, g, r, a, m) {
+                                                                        i['GoogleAnalyticsObject'] = r;
+                                                                        i[r] = i[r] || function() {
+                                                                            (i[r].q = i[r].q || []).push(arguments)
+                                                                        }, i[r].l = 1 * new Date();
+                                                                        a = s.createElement(o),
+                                                                                m = s.getElementsByTagName(o)[0];
+                                                                        a.async = 1;
+                                                                        a.src = g;
+                                                                        m.parentNode.insertBefore(a, m)
+                                                                    })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
 
-            ga('create', 'UA-15521914-3', 'auto');
-            ga('send', 'pageview');
+                                                                    ga('create', 'UA-15521914-3', 'auto');
+                                                                    ga('send', 'pageview');
 
         </script>
 
@@ -389,8 +521,14 @@
                         <td><input type='button' value='Delete' class='btn btn-outline-warning' onclick='delete_row(" + table_len + ")'>\n\
                         </td>\n\
                         </tr>";
+                var i = "item" + table_len + 1;
+                var j = "qty" + table_len + 1;
+                document.getElementById("item1").name = i;
+                document.getElementById("qty1").name = j;
+
                 document.getElementById("item1").value = "";
                 document.getElementById("qty1").value = "";
+                document.getElementById("one").value = table_len;
 
             }
             function delete_row(no)
@@ -405,15 +543,16 @@
 
 
                 var table = document.getElementById("table2");
-                var table_len = (table.rows.length) - 1;
-                var row = table.insertRow(table_len).outerHTML = "<tr id='row2" + table_len + "'>\n\
-                        <td ><input type='text' name=item2" + table_len + " id='item_row2" + table_len + "' value=" + item2 + "></td>\n\
-                        <td ><input type='text'  name=qty2" + table_len + " id='qty_row2" + table_len + "' value=" + qty2 + "></td>\n\
-                        <td><input type='button' value='Delete' class='btn btn-outline-warning' onclick='delete_row2(" + table_len + ")'>\n\
+                var table_len2 = (table.rows.length) - 1;
+                var row = table.insertRow(table_len2).outerHTML = "<tr id='row2" + table_len2 + "'>\n\
+                        <td ><input type='text' name=item2" + table_len2 + " id='item_row2" + table_len2 + "' value=" + item2 + "></td>\n\
+                        <td ><input type='text'  name=qty2" + table_len2 + " id='qty_row2" + table_len2 + "' value=" + qty2 + "></td>\n\
+                        <td><input type='button' value='Delete' class='btn btn-outline-warning' onclick='delete_row2(" + table_len2 + ")'>\n\
                         </td>\n\
                         </tr>";
                 document.getElementById("item2").value = "";
                 document.getElementById("qty2").value = "";
+                document.getElementById("two").value = table_len2;
 
             }
             function delete_row2(no)
@@ -428,13 +567,14 @@
 
 
                 var table2c = document.getElementById("table2c");
-                var table_len = (table2c.rows.length) - 1;
-                var row = table2c.insertRow(table_len).outerHTML = "<tr id='row2c" + table_len + "'>\n\
-                        <td ><input type='text' name=sport2" + table_len + " id='sport_row2" + table_len + "' value=" + sport2 + ">\n\
-                        <td><input type='button' value='Delete' class='btn btn-outline-warning' onclick='delete_row2c(" + table_len + ")'>\n\
+                var table_len2c = (table2c.rows.length) - 1;
+                var row = table2c.insertRow(table_len2c).outerHTML = "<tr id='row2c" + table_len2c + "'>\n\
+                        <td ><input type='text' name=sport2" + table_len2c + " id='sport_row2" + table_len2c + "' value=" + sport2 + ">\n\
+                        <td><input type='button' value='Delete' class='btn btn-outline-warning' onclick='delete_row2c(" + table_len2c + ")'>\n\
                         </td>\n\
                         </tr>";
                 document.getElementById("sport2").value = "";
+                document.getElementById("twob").value = table_len2c;
 
             }
             function delete_row2c(no)
@@ -458,6 +598,7 @@
                         </tr>";
                 document.getElementById("subject").value = "";
                 document.getElementById("grade").value = "";
+                document.getElementById("three").value = table3_len;
 
             }
             function delete_row3(no)
@@ -482,6 +623,7 @@
                         </tr>";
                 document.getElementById("category").value = "";
                 document.getElementById("no").value = "";
+                document.getElementById("four").value = table4_len;
 
             }
             function delete_row4(no)
@@ -505,12 +647,50 @@
                         </tr>";
                 document.getElementById("unit").value = "";
                 document.getElementById("uqty").value = "";
+                document.getElementById("seven").value = table7_len;
 
             }
             function delete_row7(no)
             {
                 document.getElementById("row7" + no + "").outerHTML = "";
             }
+        </script>
+        <script>
+            $(document).ready(function() {
+                $('#txtschool').keyup(function() {
+                    //get the antry value
+                    var query = $(this).val();
+                    //check input is not empty
+                    if (query != '')
+                    {
+                        $.ajax({
+                            url: "schoolSearch.php",
+                            method: "POST",
+                            data: {query: query},
+                            success: function(data)
+                            {
+                                //fill the med list
+                                $('#schoolList').fadeIn();
+                                $('#schoolList').html(data);
+                            }
+                        });
+
+                    }
+                });
+                $(document).on('click', '#lim', function() {
+                    $('#txtschool').val($(this).text());
+                    $('#schoolList').fadeOut();
+
+
+                });
+            });
+        </script>
+        <script>
+        function add_schooldetails() {
+       
+            //document.getElementById('schooldetails').style.display = 'block';
+            $("#schooldetails").toggle();
+        }
         </script>
 
     </body>
