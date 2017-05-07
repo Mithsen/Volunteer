@@ -69,7 +69,7 @@ if (isset($_POST['one']) or isset($_POST["itema"])) {
 
 
 if (isset($_POST['two']) or isset($_POST["itemtwo"])) {
-    
+
     if (isset($_POST['two'])) {
         $x = $_POST['two'];
         for ($i = 1; $i <= $x; $i++) {
@@ -104,16 +104,16 @@ if (isset($_POST['two']) or isset($_POST["itemtwo"])) {
 
 if (isset($_POST['twob']) or isset($_POST["sport"])) {
     if (isset($_POST['twob'])) {
-        $x =  $_POST['twob'];
+        $x = $_POST['twob'];
         for ($i = 1; $i <= $x; $i++) {
             $d = "sport2" . $i;
-            
+
 
             if (!empty($_POST[$d])) {
 
 
                 $sp = $_POST[$d];
-                
+
 
                 $query = "INSERT INTO sports_coaches
             (school_id,sport)
@@ -125,7 +125,7 @@ if (isset($_POST['twob']) or isset($_POST["sport"])) {
     }
     if (isset($_POST["sport"])) {
         $sp = $_POST["sport"];
-        
+
 
         $query = "INSERT INTO sports_coaches
             (school_id,sport)
@@ -151,10 +151,10 @@ if (isset($_POST['four']) or isset($_POST["subject"])) {
 
 
                 $category = $_POST[$d];
-                $no= $_POST[$p];
+                $no = $_POST[$p];
 
                 $query = "INSERT INTO non_acedemic_staff
-            (school_id,category,no)
+            (school_id,category,number)
              VALUES
              ('$id','$category','$no')";
                 mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
@@ -162,13 +162,14 @@ if (isset($_POST['four']) or isset($_POST["subject"])) {
         }
     }
     if (isset($_POST["category"])) {
-        $subject = $_POST["category"];
-        $grade = $_POST["no"];
+        $category = $_POST["category"];
+        $no = $_POST["no"];
 
-        $query = "INSERT INTO teachers
-            (school_id,subject,grade)
+
+        $query = "INSERT INTO non_acedemic_staff
+            (school_id,category,number)
              VALUES
-             ('$id','$subject','$grade')";
+             ('$id','$category','$no')";
         mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
     }
 }

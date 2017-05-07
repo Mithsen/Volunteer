@@ -58,7 +58,7 @@
                                     <td>
                                         <input type ='text' id='txtschool' name="txtschool" class='inputField' style="background:wheat; margin-left: 20px; width: 300px;"  autocomplete='off'>
                                     </td>
-                                    <td><input type="button" value="ADD NEW SCHOOL+" onclick="add_schooldetails();" style="margin-left: 50px;">
+                                    <td><input type="button" class="btn" value="ADD NEW SCHOOL+" onclick="add_schooldetails();" style="margin-left: 50px; h">
                                 </tr>
                                 <tr>
                                     <td></td>
