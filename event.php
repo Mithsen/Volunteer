@@ -190,8 +190,8 @@
                                                                 <th>Grade</th>
                                                             </tr>
                                                             <tr>
-                                                                <td><input type="text" id="subject"></td>
-                                                                <td><input type="text" id="grade"></td>
+                                                                <td><input type="text" id="subject" name="subject"></td>
+                                                                <td><input type="text" id="grade" name="grade"></td>
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row3();" value="Add Row"></td>
                                                             </tr>
                                                         </table>
@@ -204,8 +204,8 @@
                                                                 <th>Number of Staff</th>
                                                             </tr>
                                                             <tr>
-                                                                <td><input type="text" id="category"></td>
-                                                                <td><input type="text" id="no"></td>
+                                                                <td><input type="text" id="category" name="category"></td>
+                                                                <td><input type="text" id="no" name="no"></td>
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row4();" value="Add Row"></td>
                                                             </tr>
                                                         </table>
@@ -526,8 +526,8 @@
                                 var table3 = document.getElementById("table3");
                                 var table3_len = (table3.rows.length) - 1;
                                 var row = table3.insertRow(table3_len).outerHTML = "<tr id='row3" + table3_len + "'>\n\
-                                        <td ><input type='text' name=item" + table3_len + " id='item_row1" + table3_len + "' value=" + subject + "></td>\n\
-                                        <td ><input type='text'  name=qty" + table3_len + " id='qty_row1" + table3_len + "' value=" + grade + "></td>\n\
+                                        <td ><input type='text' name=subject" + table3_len + " id='item_row1" + table3_len + "' value=" + subject + "></td>\n\
+                                        <td ><input type='text'  name=grade" + table3_len + " id='qty_row1" + table3_len + "' value=" + grade + "></td>\n\
                                         <td><input type='button' value='Delete' class='btn btn-outline-warning' onclick='delete_row3(" + table3_len + ")'>\n\
                                         </td>\n\
                                         </tr>";

@@ -140,6 +140,41 @@ if (isset($_POST['twob']) or isset($_POST["sport"])) {
 
 
 
+if (isset($_POST['four']) or isset($_POST["subject"])) {
+    if (isset($_POST['four'])) {
+        $x = $_POST['four'];
+        for ($i = 1; $i <= $x; $i++) {
+            $d = "subject" . $i;
+            $p = "grade" . $i;
+
+            if (!empty($_POST[$d])) {
+
+
+                $category = $_POST[$d];
+                $no= $_POST[$p];
+
+                $query = "INSERT INTO non_acedemic_staff
+            (school_id,category,no)
+             VALUES
+             ('$id','$category','$no')";
+                mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+            }
+        }
+    }
+    if (isset($_POST["category"])) {
+        $subject = $_POST["category"];
+        $grade = $_POST["no"];
+
+        $query = "INSERT INTO teachers
+            (school_id,subject,grade)
+             VALUES
+             ('$id','$subject','$grade')";
+        mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+    }
+}
+
+
+
 
 
 
