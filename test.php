@@ -175,7 +175,36 @@ if (isset($_POST['four']) or isset($_POST["subject"])) {
 }
 
 
+if (isset($_POST["water"])) {
+    $water = $_POST["water"];
+    if (mysqli_num_rows(mysqli_query($mysqli, "SELECT water FROM others WHERE school_id = '$id'"))) {
+        $query = "update others set water=1 where school_id='$id'";
+        mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+    }
+    else {
+        $query = "INSERT INTO others
+            (school_id,water)
+             VALUES
+             ('$id','1')";
+        mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+    }
+}
 
+
+if (isset($_POST["ele"])) {
+    $water = $_POST["water"];
+    if (mysqli_num_rows(mysqli_query($mysqli, "SELECT electricity FROM others WHERE school_id = '$id'"))) {
+        $query = "update others set electricity=1 where school_id='$id'";
+        mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+    }
+    else {
+        $query = "INSERT INTO others
+            (school_id,electricity)
+             VALUES
+             ('$id','1')";
+        mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+    }
+}
 
 
 

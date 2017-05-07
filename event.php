@@ -228,7 +228,7 @@
                                             <input type="checkbox" name="water" id="water">No drinking water/water not suitable for drinking purposes </br>
                                             <!--<h3>Electricity</h3>-->
                                             <input type="checkbox" name="ele" id="ele">No electricity supply for the school
-                                            <input type="hidden" name="five"  value="0" id="five">
+                                            
                                         </div>
                                         <div class="toggle-btn"><h3 id="h4tab6" style="margin-bottom:20px; cursor:pointer;">Sanitary facilities</h3></div>
 
