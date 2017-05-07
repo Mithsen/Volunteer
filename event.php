@@ -108,7 +108,8 @@
                                 <div class="hour-box">
                                     <div class="img-circle circle"><span></span></div>
                                     <div class="toggle-btn"><h3>Educational resources</h3></div>
-                                    <div class="content-box collapsed">
+                                    <!--<div class="content-box collapsed">-->
+                                    <div class="content-box">
                                         <div class="content" style="margin-left: 100px;">
                                             <ul>
                                                 <li><div id='wrapper' style=padding-top:30px;'>
