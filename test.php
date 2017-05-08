@@ -192,7 +192,7 @@ if (isset($_POST["water"])) {
 
 
 if (isset($_POST["ele"])) {
-    $water = $_POST["water"];
+   
     if (mysqli_num_rows(mysqli_query($mysqli, "SELECT electricity FROM others WHERE school_id = '$id'"))) {
         $query = "update others set electricity=1 where school_id='$id'";
         mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
@@ -207,9 +207,55 @@ if (isset($_POST["ele"])) {
 }
 
 
+if ($_POST["wash"]!=0) {
+    $wash = $_POST["wash"];
+    if (mysqli_num_rows(mysqli_query($mysqli, "SELECT electricity FROM others WHERE school_id = '$id'"))) {
+        $query = "update others set washrooms=$wash where school_id='$id'";
+        mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+    }
+    else {
+        $query = "INSERT INTO others
+            (school_id,washrooms)
+             VALUES
+             ('$id','$wash')";
+        mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+    }
+}
 
 
+if (isset($_POST['seven']) or isset($_POST["funit"])) {
+    if (isset($_POST['seven'])) {
+        $x = $_POST['seven'];
+        for ($i = 1; $i <= $x; $i++) {
+            $d = "funit" . $i;
+            $p = "fqty" . $i;
 
+            if (!empty($_POST[$d])) {
+
+
+                $funit = $_POST[$d];
+                $fqty = $_POST[$p];
+
+                $query = "INSERT INTO furniture
+            (school_id,unit_type,u_qunatity)
+             VALUES
+             ('$id','$funit','$fqty')";
+                mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+            }
+        }
+    }
+    if (isset($_POST["funit"])) {
+        $funit = $_POST["funit  "];
+        $fqty = $_POST["fqty"];
+
+
+        $query = "INSERT INTO furniture
+            (school_id,unit_type,u_qunatity)
+             VALUES
+             ('$id','$funit','$fqty')";
+        mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+    }
+}
 
 mysqli_close($mysqli);
 ?>

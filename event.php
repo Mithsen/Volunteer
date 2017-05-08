@@ -233,7 +233,7 @@
                                         <div class="toggle-btn"><h3 id="h4tab6" style="margin-bottom:20px; cursor:pointer;">Sanitary facilities</h3></div>
 
                                         <div id='h4tab6b' style="display: none; padding-top:30px; margin-left: 100px; margin-top: -40px;">
-                                            No of washrooms required : <input type='number' name='sen' id='sen' style='width:40px;'>
+                                            No of washrooms required : <input type='number' name='wash' value="0" id='sen' style='width:40px;'>
 
                                         </div>
                                         <input type="hidden" name="six"  value="0" id="six">
@@ -245,8 +245,8 @@
                                                 <th>Quantity</th>
                                             </tr>
                                             <tr>
-                                                <td><input type="text" id="unit"></td>
-                                                <td><input type="text" id="uqty"></td>
+                                                <td><input type="text" id="unit" name="funit"></td>
+                                                <td><input type="text" id="uqty" name="fqty"></td>
                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row7();" value="Add Row"></td>
                                             </tr>
                                         </table>
@@ -575,8 +575,8 @@
                                 var table7 = document.getElementById("table7");
                                 var table7_len = (table7.rows.length) - 1;
                                 var row = table7.insertRow(table7_len).outerHTML = "<tr id='row7" + table7_len + "'>\n\
-                                        <td ><input type='text' name=item" + table7_len + " id='item_row1" + table7_len + "' value=" + unit + "></td>\n\
-                                        <td ><input type='text'  name=qty" + table7_len + " id='qty_row1" + table7_len + "' value=" + uqty + "></td>\n\
+                                        <td ><input type='text' name=funit" + table7_len + " id='item_row1" + table7_len + "' value=" + unit + "></td>\n\
+                                        <td ><input type='text'  name=fqty" + table7_len + " id='qty_row1" + table7_len + "' value=" + uqty + "></td>\n\
                                         <td><input type='button' value='Delete' class='btn btn-outline-warning' onclick='delete_row7(" + table7_len + ")'>\n\
                                         </td>\n\
                                         </tr>";
