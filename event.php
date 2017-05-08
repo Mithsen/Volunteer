@@ -281,7 +281,7 @@
                                             <li><input type="checkbox" name="garbage2" id="garbage2">No fixed dates for collection of  garbage in the area</li>
 
                                             <li style="margin-top: 20px;"><h4>Drainage system </h4></li>
-                                            <li><input type="checkbox" name="garbage1" id="garbage1">Improper Drainage system </li>
+                                            <li><input type="checkbox" name="dra" id="garbage1">Improper Drainage system </li>
                                         </ul>
                                     </div>
                                     <input type="hidden" name="nine"  value="0" id="nine">
