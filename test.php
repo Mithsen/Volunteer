@@ -245,7 +245,7 @@ if (isset($_POST['seven']) or isset($_POST["funit"])) {
         }
     }
     if (isset($_POST["funit"])) {
-        $funit = $_POST["funit  "];
+        $funit = $_POST["funit"];
         $fqty = $_POST["fqty"];
 
 
@@ -257,5 +257,45 @@ if (isset($_POST['seven']) or isset($_POST["funit"])) {
     }
 }
 
+if (isset($_POST["lab"])) {
+    if (mysqli_num_rows(mysqli_query($mysqli, "SELECT lab_facility FROM others WHERE school_id = '$id'"))) {
+        $query = "update others set lab_facility=1 where school_id='$id'";
+        mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+    }
+    else {
+        $query = "INSERT INTO others
+            (school_id,lab_facility)
+             VALUES
+             ('$id','1')";
+        mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+    }
+}
+if (isset($_POST["build"])) {
+    if (mysqli_num_rows(mysqli_query($mysqli, "SELECT build FROM others WHERE school_id = '$id'"))) {
+        $query = "update others set build=1 where school_id='$id'";
+        mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+    }
+    else {
+        $query = "INSERT INTO others
+            (school_id,build)
+             VALUES
+             ('$id','1')";
+        mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+    }
+}
+
+if (isset($_POST["internet"])) {
+    if (mysqli_num_rows(mysqli_query($mysqli, "SELECT internet FROM others WHERE school_id = '$id'"))) {
+        $query = "update others set internet=1 where school_id='$id'";
+        mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+    }
+    else {
+        $query = "INSERT INTO others
+            (school_id,internet)
+             VALUES
+             ('$id','1')";
+        mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
+    }
+}
 mysqli_close($mysqli);
 ?>
