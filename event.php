@@ -58,7 +58,7 @@
                                     <td>
                                         <input type ='text' id='txtschool' name="txtschool" class='inputField' style="background:wheat; margin-left: 20px; width: 300px;"  autocomplete='off'>
                                     </td>
-                                    <td><input type="button" class="btn" value="ADD NEW SCHOOL+" onclick="add_schooldetails();" style="margin-left: 50px; h">
+                                    <td><input type="button" class="btn" value="+ ADD NEW SCHOOL" onclick="add_schooldetails();" style="margin-left: 50px; h">
                                 </tr>
                                 <tr>
                                     <td></td>
@@ -256,7 +256,7 @@
 
                                         <div class="toggle-btn"><h3 id="h4tab8" style="margin-bottom:20px; cursor:pointer;">Other</h3></div>
 
-                                        <div id='h4tab8b' style="display: none; padding-top:30px; margin-left: 200px; margin-top: -40px;">
+                                        <div id='h4tab8b' style="display: none; padding-top:30px; margin-left: 100px; margin-top: -40px;">
                                             <input type="checkbox" name="lab" id="inf1">Lab facilities(computer labs )</br>
                                             <input type="checkbox" name="build" id="inf2">Buildings</br>
                                             <input type="checkbox" name="internet" id="inf3">Internet facility</br>
