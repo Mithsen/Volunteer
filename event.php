@@ -53,7 +53,7 @@
                             <table>
                                 <tr>
                                     <td>
-                                        Enter your school:
+                                        <h4>Enter your school:</h4>
                                     </td>
                                     <td>
                                         <input type ='text' id='txtschool' name="txtschool" class='inputField' style="background:wheat; margin-left: 20px; width: 300px;"  autocomplete='off'>
@@ -119,8 +119,8 @@
                                                                 <th>Quantity</th>
                                                             </tr>
                                                             <tr>
-                                                                <td><input type="text" name ="itema" id="itema"></td>
-                                                                <td><input type="text" name="qtya" id="qtya"></td>
+                                                                <td><input type="text" name ="itema" id="itema" style="background:wheat;"></td>
+                                                                <td><input type="text" name="qtya" id="qtya" style="background:wheat;"></td>
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row();" value="Add Item"></td>
                                                             </tr>
                                                         </table>
@@ -145,8 +145,8 @@
                                                                 <th>Quantity</th>
                                                             </tr>
                                                             <tr>
-                                                                <td><input type="text" id="itemtwo" name="itemtwo"></td>
-                                                                <td><input type="text" id="qtytwo" name="qtytwo"></td>
+                                                                <td><input type="text" id="itemtwo" name="itemtwo" style="background:wheat;"></td>
+                                                                <td><input type="text" id="qtytwo" name="qtytwo" style="background:wheat;"></td>
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row2();" value="Add item"></td>
                                                             </tr>
                                                         </table>
@@ -162,8 +162,8 @@
 
                                                             </tr>
                                                             <tr>
-                                                                <td><input type="text" id="sport2" name="sport"></td>
-                                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row2c();" value="Add Row"></td>
+                                                                <td><input type="text" id="sport2" name="sport" style="background:wheat;"></td>
+                                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row2c();" value="Add item"></td>
                                                             </tr>
                                                         </table>
                                                         <input type="hidden" name="twob"  value="0" id="twob">
@@ -190,9 +190,9 @@
                                                                 <th>Grade</th>
                                                             </tr>
                                                             <tr>
-                                                                <td><input type="text" id="subject" name="subject"></td>
-                                                                <td><input type="text" id="grade" name="grade"></td>
-                                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row3();" value="Add Row"></td>
+                                                                <td><input type="text" id="subject" name="subject" style="background:wheat;"></td>
+                                                                <td><input type="text" id="grade" name="grade" style="background:wheat;"></td>
+                                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row3();" value="Add item"></td>
                                                             </tr>
                                                         </table>
                                                         <input type="hidden" name="three"  value="0" id="three">
@@ -204,9 +204,9 @@
                                                                 <th>Number of Staff</th>
                                                             </tr>
                                                             <tr>
-                                                                <td><input type="text" id="category" name="category"></td>
-                                                                <td><input type="text" id="no" name="no"></td>
-                                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row4();" value="Add Row"></td>
+                                                                <td><input type="text" id="category" name="category" style="background:wheat;"></td>
+                                                                <td><input type="text" id="no" name="no" style="background:wheat;"></td>
+                                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row4();" value="Add item"></td>
                                                             </tr>
                                                         </table>
                                                         <input type="hidden" name="four"  value="0" id="four">
@@ -225,13 +225,13 @@
 
                                     <div class="content-box" style='padding-top:30px; margin-left: 100px; margin-top: -20px;'>
                                         <div class="toggle-btn"><h3 id="h4tab5" style="margin-bottom:20px; cursor:pointer;">Water/Electricity</h3></div>
-                                        <div id='h4tab5b' style="display: none; padding-top:30px; margin-left: 100px; margin-top: -40px; ">
+                                        <div id='h4tab5b' style="display: none; padding-top:30px; margin-left: 100px; margin-top: -40px;  margin-bottom: 20px;">
                                             <input type="checkbox" name="water" id="water">No drinking water/water not suitable for drinking purposes </br>
                                             <!--<h3>Electricity</h3>-->
                                             <input type="checkbox" name="ele" id="ele">No electricity supply for the school
 
                                         </div>
-                                        <div class="toggle-btn"><h3 id="h4tab6" style="margin-bottom:20px; cursor:pointer;">Sanitary facilities</h3></div>
+                                        <div class="toggle-btn"><h3 id="h4tab6" style="margin-bottom:20px; cursor:pointer; margin-bottom: 20px;">Sanitary facilities</h3></div>
 
                                         <div id='h4tab6b' style="display: none; padding-top:30px; margin-left: 100px; margin-top: -40px;">
                                             No of washrooms required : <input type='number' name='wash' value="0" id='sen' style='width:40px;'>
@@ -246,9 +246,9 @@
                                                 <th>Quantity</th>
                                             </tr>
                                             <tr>
-                                                <td><input type="text" id="unit" name="funit"></td>
-                                                <td><input type="text" id="uqty" name="fqty"></td>
-                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row7();" value="Add Row"></td>
+                                                <td><input type="text" id="unit" name="funit" style="background:wheat;"></td>
+                                                <td><input type="text" id="uqty" name="fqty" style="background:wheat;"></td>
+                                                <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row7();" value="Add item"></td>
                                             </tr>
                                         </table>
                                         <input type="hidden" name="seven"  value="0" id="seven">
@@ -275,14 +275,17 @@
                                     <div class="toggle-btn"><h3>Wastage Management </h3></div>
 
                                     <div class="content-box" style="padding-top:30px; margin-left: 100px; margin-top: -10px;">
-                                        <ul>
-                                            <li><h4>Garbage disposal</h4></li>
-                                            <li><input type="checkbox" name="garbage1" id="garbage1">No proper way of disposing garbage</li>
-                                            <li><input type="checkbox" name="garbage2" id="garbage2">No fixed dates for collection of  garbage in the area</li>
 
-                                            <li style="margin-top: 20px;"><h4>Drainage system </h4></li>
-                                            <li><input type="checkbox" name="dra" id="garbage1">Improper Drainage system </li>
-                                        </ul>
+                                        <h4>Garbage disposal</h4>
+                                        <div style="margin-left: 100px;"> 
+
+                                            <input type="checkbox" name="garbage1" id="garbage1">No proper way of disposing garbage</br>
+                                            <input type="checkbox" name="garbage2" id="garbage2">No fixed dates for collection of  garbage in the area
+                                        </div>
+                                        <h4 style="margin-top: 20px;">Drainage system </h4>
+                                        <div style="margin-left: 100px;"> 
+                                            <input type="checkbox" name="dra" id="garbage1">Improper Drainage system 
+                                        </div>
                                     </div>
                                     <input type="hidden" name="nine"  value="0" id="nine">
                                 </div>
