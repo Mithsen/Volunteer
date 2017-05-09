@@ -338,6 +338,6 @@ if (isset($_POST["dra"])) {
         mysqli_query($mysqli, $query) or die(mysqli_error($mysqli));
     }
 }
-
+header( "Location: event.php" );
 mysqli_close($mysqli);
 ?>

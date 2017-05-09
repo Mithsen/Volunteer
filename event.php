@@ -48,7 +48,7 @@
             <!--Schedule Section / Style Two-->
             <section class="schedule-section style-two">
                 <div class="auto-container">
-                    <form action="test.php" method="post">
+                    <form action="test.php" method="post" onSubmit="alert('Successfully Submited');">
                         <div style="margin-bottom: 30px;">
                             <table>
                                 <tr>
