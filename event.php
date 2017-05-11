@@ -1,4 +1,23 @@
 <!DOCTYPE html>
+<?php
+
+function dopdownSoprt() {
+    include 'db/dbconnect.php';
+
+    $output = '';
+    $query = "SELECT * FROM sport";
+    $result = mysqli_query($mysqli, $query);
+    $output = '<select name="sport" id="dosagedr">';
+    if (mysqli_num_rows($result) > 0) {
+        while ($row = mysqli_fetch_array($result)) {
+            $output .='<option value=' . $row["sport"] . '></option>';
+        }
+    }
+
+    $output .= '</select>';
+    echo $output;
+}
+?>
 <html>
 
     <!-- Mirrored from wp1.themexlab.com/html/volunteer/event.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Mar 2017 04:40:25 GMT -->
@@ -141,11 +160,32 @@
                                                 <li><div id='wrapper' style=padding-top:30px;'>
                                                         <table class="table table-striped" cellspacing=1 cellpadding=3 id='table2' border=1 style="margin-top: -30px;">
                                                             <tr>
-                                                                <th>item</th>
+                                                                <th>Sport</th>
+                                                                <th>Item</th>
                                                                 <th>Quantity</th>
                                                             </tr>
                                                             <tr>
-                                                                <td><input type="text" id="itemtwo" name="itemtwo" style="background:wheat;"></td>
+                                                                <td>
+                                                                    <?php
+                                                                    include 'db/dbconnect.php';
+
+                                                                    $output = '';
+                                                                    $query = "SELECT * FROM adminsport";
+                                                                    $result = mysqli_query($mysqli, $query);
+                                                                    $output = '<select name="sportdropdown" id="sportdropdown" style="background:wheat;">';
+                                                                    if (mysqli_num_rows($result) > 0) {
+                                                                        while ($row = mysqli_fetch_array($result)) {
+                                                                            $output .='<option value=' . $row["name"] . '>' . $row["name"] . '</option>';
+                                                                        }
+                                                                    }
+
+                                                                    $output .= '</select>';
+                                                                    echo $output;
+                                                                    ?>
+                                                                </td>
+<!--                                                                <td><input type="text" id="itemtwo" name="itemtwo" style="background:wheat;">-->
+                                                                <td><div id='sporteqList'></div> 
+                                                                </td>
                                                                 <td><input type="text" id="qtytwo" name="qtytwo" style="background:wheat;"></td>
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row2();" value="Add item"></td>
                                                             </tr>
@@ -162,7 +202,25 @@
 
                                                             </tr>
                                                             <tr>
-                                                                <td><input type="text" id="sport2" name="sport" style="background:wheat;"></td>
+                                                                <td>
+<!--                                                                    <input type="text" id="sport2" name="sport" style="background:wheat;">-->
+                                                                    <?php
+                                                                    include 'db/dbconnect.php';
+
+                                                                    $output = '';
+                                                                    $query = "SELECT * FROM adminsport";
+                                                                    $result = mysqli_query($mysqli, $query);
+                                                                    $output = '<select name="sport2" id="sport2" style="background:wheat;">';
+                                                                    if (mysqli_num_rows($result) > 0) {
+                                                                        while ($row = mysqli_fetch_array($result)) {
+                                                                            $output .='<option value=' . $row["name"] . '>' . $row["name"] . '</option>';
+                                                                        }
+                                                                    }
+
+                                                                    $output .= '</select>';
+                                                                    echo $output;
+                                                                    ?>
+                                                                </td>
                                                                 <td><input type="button" class="btn btn-secondary btn-sm" onclick="add_row2c();" value="Add item"></td>
                                                             </tr>
                                                         </table>
@@ -217,11 +275,10 @@
 
                                     </div>
                                 </div>
-
                                 <div class="hour-box">
                                     <!--<div class="hour">10/01/2016</div>-->
                                     <div class="img-circle circle"><span></span></div>
-                                    <div class="toggle-btn"><h3>Infrastructure - Water/Electricity</h3></div>
+                                    <div class="toggle-btn"><h3>Infrastructure</h3></div>
 
                                     <div class="content-box" style='padding-top:30px; margin-left: 100px; margin-top: -20px;'>
                                         <div class="toggle-btn"><h3 id="h4tab5" style="margin-bottom:20px; cursor:pointer;">Water/Electricity</h3></div>
@@ -424,20 +481,20 @@
 
 
         <script>
-                                        (function(i, s, o, g, r, a, m) {
-                                            i['GoogleAnalyticsObject'] = r;
-                                            i[r] = i[r] || function() {
-                                                (i[r].q = i[r].q || []).push(arguments)
-                                            }, i[r].l = 1 * new Date();
-                                            a = s.createElement(o),
-                                                    m = s.getElementsByTagName(o)[0];
-                                            a.async = 1;
-                                            a.src = g;
-                                            m.parentNode.insertBefore(a, m)
-                                        })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
+                        (function(i, s, o, g, r, a, m) {
+                            i['GoogleAnalyticsObject'] = r;
+                            i[r] = i[r] || function() {
+                                (i[r].q = i[r].q || []).push(arguments)
+                            }, i[r].l = 1 * new Date();
+                            a = s.createElement(o),
+                                    m = s.getElementsByTagName(o)[0];
+                            a.async = 1;
+                            a.src = g;
+                            m.parentNode.insertBefore(a, m)
+                        })(window, document, 'script', '../../../www.google-analytics.com/analytics.js', 'ga');
 
-                                        ga('create', 'UA-15521914-3', 'auto');
-                                        ga('send', 'pageview');
+                        ga('create', 'UA-15521914-3', 'auto');
+                        ga('send', 'pageview');
 
         </script>
 
@@ -471,6 +528,7 @@
 
             function add_row2()
             {
+                var sport = document.getElementById("sportdropdown").value;
                 var itemtwo = document.getElementById("itemtwo").value;
                 var qtytwo = document.getElementById("qtytwo").value;
 
@@ -478,11 +536,13 @@
                 var table = document.getElementById("table2");
                 var table_len2 = (table.rows.length) - 1;
                 var row = table.insertRow(table_len2).outerHTML = "<tr id='row2" + table_len2 + "'>\n\
+                        <td ><input type='text' name=sportdropdown" + table_len2 + " id='sportdropdown" + table_len2 + "' value=" + sport + "></td>\n\
                         <td ><input type='text' name=itemtwo" + table_len2 + " id='item_row2" + table_len2 + "' value=" + itemtwo + "></td>\n\
                         <td ><input type='text'  name=qtytwo" + table_len2 + " id='qty_row2" + table_len2 + "' value=" + qtytwo + "></td>\n\
                         <td><input type='button' value='Delete' class='btn btn-outline-warning' onclick='delete_row2(" + table_len2 + ")'>\n\
                         </td>\n\
                         </tr>";
+                 document.getElementById("sportdropdown").value = "";           
                 document.getElementById("itemtwo").value = "";
                 document.getElementById("qtytwo").value = "";
                 document.getElementById("two").value = table_len2;
@@ -650,7 +710,32 @@
             }
         </script>
 
+        <script>
+            $(document).ready(function() {
+                $("#sportdropdown").change(function() {
+                    //get the antry value
+                    var query = $(this).val();
+                    //check input is not empty
+
+                    $.ajax({
+                        //to get data from database to dropdowm list
+                        url: "dropdownSportList.php",
+                        method: "POST",
+                        data: {query: query},
+                        success: function(data)
+                        {
+                            $('#sporteqList').fadeIn();
+                            $('#sporteqList').html(data);
+                        }
+                    });
+
+                });
+
+            });
+        </script>
+
     </body>
 
     <!-- Mirrored from wp1.themexlab.com/html/volunteer/event.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Mar 2017 04:40:25 GMT -->
 </html>
+

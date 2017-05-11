@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 08, 2017 at 03:03 AM
+-- Generation Time: May 11, 2017 at 06:00 AM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -23,6 +23,56 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `adminsport`
+--
+
+CREATE TABLE IF NOT EXISTS `adminsport` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `adminsport`
+--
+
+INSERT INTO `adminsport` (`id`, `name`) VALUES
+(1, 'Table Tennis'),
+(2, 'cricket');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin_sport_equipment`
+--
+
+CREATE TABLE IF NOT EXISTS `admin_sport_equipment` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sport_id` int(11) NOT NULL,
+  `equipment` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+
+--
+-- Dumping data for table `admin_sport_equipment`
+--
+
+INSERT INTO `admin_sport_equipment` (`id`, `sport_id`, `equipment`) VALUES
+(1, 1, 'racket'),
+(2, 1, 'rubbers'),
+(3, 1, 'net'),
+(4, 1, 'table'),
+(5, 1, 'shoes'),
+(6, 2, 'bat'),
+(7, 2, 'ball'),
+(8, 2, 'pad'),
+(9, 2, 'helmet'),
+(10, 2, 'Stumps '),
+(11, 2, 'Gloves');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `edu_resources`
 --
 
@@ -32,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `edu_resources` (
   `edu_item` varchar(100) NOT NULL,
   `e_quantity` int(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=98 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=112 ;
 
 --
 -- Dumping data for table `edu_resources`
@@ -109,7 +159,21 @@ INSERT INTO `edu_resources` (`id`, `school_id`, `edu_item`, `e_quantity`) VALUES
 (94, 3, '', 0),
 (95, 3, '', 0),
 (96, 3, '', 0),
-(97, 0, '', 0);
+(97, 0, '', 0),
+(98, 0, '', 0),
+(99, 0, '', 0),
+(100, 0, 'fsf', 0),
+(101, 0, '', 0),
+(102, 0, 'bcb', 0),
+(103, 0, '', 0),
+(104, 0, '', 0),
+(105, 1, 'dad', 0),
+(106, 0, '', 0),
+(107, 0, '', 0),
+(108, 0, '', 0),
+(109, 0, '', 0),
+(110, 0, '', 0),
+(111, 0, '', 0);
 
 -- --------------------------------------------------------
 
@@ -135,6 +199,18 @@ INSERT INTO `furniture` (`school_id`, `unit_type`, `u_qunatity`) VALUES
 (3, '', 0),
 (3, '', 0),
 (3, '', 0),
+(0, '', 0),
+(0, '', 0),
+(0, '', 0),
+(0, '', 0),
+(0, '', 0),
+(0, '', 0),
+(0, '', 0),
+(0, '', 0),
+(1, '', 0),
+(0, '', 0),
+(0, '', 0),
+(0, '', 0),
 (0, '', 0);
 
 -- --------------------------------------------------------
@@ -199,6 +275,18 @@ INSERT INTO `non_acedemic_staff` (`school_id`, `category`, `number`) VALUES
 (3, '', 0),
 (3, '', 0),
 (3, '', 0),
+(0, '', 0),
+(0, '', 0),
+(0, '', 0),
+(0, '', 0),
+(0, '', 0),
+(0, '', 0),
+(0, '', 0),
+(0, '', 0),
+(1, '', 0),
+(0, '', 0),
+(0, '', 0),
+(0, '', 0),
 (0, '', 0);
 
 -- --------------------------------------------------------
@@ -271,7 +359,7 @@ CREATE TABLE IF NOT EXISTS `sports_coaches` (
   `school_id` int(50) NOT NULL,
   `sport` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=64 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=74 ;
 
 --
 -- Dumping data for table `sports_coaches`
@@ -329,7 +417,17 @@ INSERT INTO `sports_coaches` (`id`, `school_id`, `sport`) VALUES
 (60, 3, ''),
 (61, 3, ''),
 (62, 3, ''),
-(63, 0, '');
+(63, 0, ''),
+(64, 0, ''),
+(65, 0, ''),
+(66, 0, ''),
+(67, 0, ''),
+(68, 0, ''),
+(69, 0, ''),
+(70, 0, ''),
+(71, 1, ''),
+(72, 0, 'cricket'),
+(73, 0, 'cricket');
 
 -- --------------------------------------------------------
 
@@ -340,68 +438,24 @@ INSERT INTO `sports_coaches` (`id`, `school_id`, `sport`) VALUES
 CREATE TABLE IF NOT EXISTS `sports_equipment` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `school_id` int(50) NOT NULL,
+  `sport_id` int(11) NOT NULL,
   `sports_item` varchar(100) NOT NULL,
   `s_qunatity` int(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=62 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `sports_equipment`
 --
 
-INSERT INTO `sports_equipment` (`id`, `school_id`, `sports_item`, `s_qunatity`) VALUES
-(10, 1, '', 0),
-(11, 1, '', 0),
-(12, 3, '', 0),
-(13, 0, '', 0),
-(14, 0, '', 0),
-(15, 0, '', 0),
-(16, 1, '', 0),
-(17, 1, '', 0),
-(18, 1, '', 0),
-(19, 1, '', 0),
-(20, 0, '', 0),
-(21, 0, '', 0),
-(22, 0, '', 0),
-(23, 0, '', 0),
-(24, 0, '', 0),
-(25, 0, '', 0),
-(26, 0, '', 0),
-(27, 1, '', 0),
-(28, 1, '', 0),
-(29, 1, '', 0),
-(30, 1, '', 0),
-(31, 1, '', 0),
-(32, 1, '', 0),
-(33, 1, '', 0),
-(34, 3, '', 0),
-(35, 3, '', 0),
-(36, 3, '', 0),
-(37, 3, '', 0),
-(38, 0, '', 0),
-(39, 0, '', 0),
-(40, 0, '', 0),
-(41, 1, '', 0),
-(42, 1, '', 0),
-(43, 1, '', 0),
-(44, 1, '', 0),
-(45, 3, '', 0),
-(46, 0, '', 0),
-(47, 0, '', 0),
-(48, 0, '', 0),
-(49, 0, '', 0),
-(50, 0, '', 0),
-(51, 0, '', 0),
-(52, 0, '', 0),
-(53, 0, '', 0),
-(54, 0, '', 0),
-(55, 0, '', 0),
-(56, 1, '', 0),
-(57, 3, '', 0),
-(58, 3, '', 0),
-(59, 3, '', 0),
-(60, 3, '', 0),
-(61, 0, '', 0);
+INSERT INTO `sports_equipment` (`id`, `school_id`, `sport_id`, `sports_item`, `s_qunatity`) VALUES
+(1, 0, 0, 'ball', 45),
+(2, 0, 0, 'racket', 4),
+(3, 0, 2, 'ball', 78),
+(4, 0, 0, 'rubbers', 6),
+(5, 0, 2, 'ball', 23),
+(6, 0, 1, 'racket', 4),
+(7, 0, 2, 'pad', 12);
 
 -- --------------------------------------------------------
 
