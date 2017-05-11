@@ -148,6 +148,41 @@ function dopdownSoprt() {
                                                 </li> <!-- Add class "current" to sub menu items also -->
                                             </ul>
                                         </div>
+                                        
+                                        <div class="toggle-btn"><h3 id="textbook" style="margin-bottom: 20px; cursor:pointer; margin-left: 100px;">Text Books</h3></div>
+                                        <div class="content-box" style="margin-left: 200px;">
+                                            <table>
+                                                <tr>
+                                                    <th>Medium</th>
+                                                    <th>Grade</th>
+                                                    <th>Subject</th>
+                                                    <th>Quantity</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        
+                                        <div class="toggle-btn"><h3 id="referencebook" style="margin-bottom: 20px; cursor:pointer; margin-left: 100px;">Reference Books</h3></div>
+                                        <div class="content-box" style="margin-left: 200px;">
+                                            <table>
+                                                <tr>
+                                                    <th>Subject</th>
+                                                    <th>Book Name</th>
+                                                    <th>Quantity</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        
+                                        <div class="toggle-btn"><h3 id="generalbook" style="margin-bottom: 20px; cursor:pointer; margin-left: 100px;">General Books</h3></div>
+                                        <div class="content-box" style="margin-left: 200px;">
+                                            <table>
+                                                <tr>
+                                                    <th>Category</th>
+                                                    <th>Book Name</th>
+                                                    <th>Quantity</th>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="hour-box">
@@ -157,7 +192,7 @@ function dopdownSoprt() {
                                         <div class="content" style="margin-left: 100px;">
                                             <ul>
                                                 <li>Sport items: </li>
-                                                <li><div id='wrapper' style=padding-top:30px;'>
+                                                <li><div id='wrapper' style='padding-top:30px;'>
                                                         <table class="table table-striped" cellspacing=1 cellpadding=3 id='table2' border=1 style="margin-top: -30px;">
                                                             <tr>
                                                                 <th>Sport</th>
