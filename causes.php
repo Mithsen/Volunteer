@@ -61,8 +61,8 @@
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Inadequate educational resources </h3>
-                                        <p>books, text books,  Books for libraries, other stationary(pens, pencils)</p>
+                                        <h3>Educational material </h3>
+                                        <p>Books, Text books,  Books for libraries, other stationary(pens, pencils)</p>
                                     </div>
                                     <div class="proj-donation">
                                         <div class="info"><strong>Donation : </strong> $24,241 / $35,000</div>
@@ -83,7 +83,7 @@
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Inadequate sports facilities and equipment </h3>
+                                        <h3>Sports facilities and equipment </h3>
                                         <p>Sports wise</p>
                                     </div>
                                     <div class="proj-donation">
@@ -105,7 +105,7 @@
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Shortage of teachers </h3>
+                                        <h3>Teachers </h3>
                                         <p>subject wise for different grades</p>
                                     </div>
                                     <div class="proj-donation">
@@ -127,7 +127,7 @@
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Shortage of non-academic staff </h3>
+                                        <h3>Non-academic staff </h3>
                                         <p>librarian, hostel wardens, clerks, cleaners</p>
                                     </div>
                                     <div class="proj-donation">
@@ -154,7 +154,7 @@
                                 <div class="lower-part">
                                     <div class="text">
                                         <h3>Water/Electricity</h3>
-                                        <p>Drinking water, no water supply for </p>
+                                        <p>Drinking water, Electricity </p>
                                     </div>
                                     <div class="proj-donation">
                                         <div class="info"><strong>Donation : </strong> $24,241 / $35,000</div>
@@ -175,7 +175,7 @@
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Lack of Sanitary facilities </h3>
+                                        <h3>Sanitary facilities </h3>
                                         <p>Washrooms</p>
                                     </div>
                                     <div class="proj-donation">
@@ -197,7 +197,7 @@
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Shortage of School furniture</h3>
+                                        <h3>School furniture</h3>
                                         <p>chairs, tables, Black/white board, </p>
                                     </div>
                                     <div class="proj-donation">
@@ -219,8 +219,8 @@
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>Lack of Infrastructure </h3>
-                                        <p>buildings, gates, walls</p> 
+                                        <h3>Infrastructure </h3>
+                                        <p>buildings,Class rooms, School transport facility, Gates, walls</p> 
                                     </div>
                                     <div class="proj-donation">
                                         <div class="info"><strong>Donation : </strong> $37001 / $77,000</div>
@@ -239,7 +239,7 @@
                                 </figure>
                                 <div class="lower-part">
                                     <div class="text">
-                                        <h3>9.	Improper wastage Management </h3>
+                                        <h3> Wastage Management </h3>
                                         <p>Garbage disposal, Drainage system</p>
                                     </div>
                                     <div class="proj-donation">

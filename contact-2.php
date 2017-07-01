@@ -36,7 +36,7 @@
             <!--Bread Crumb-->
             <div class="bread-crumb">
                 <div class="auto-container">
-                    Pages  &ensp;<span class="fa fa-angle-right"></span>&ensp; <a href="#" class="ative">Contact Us</a>
+                    Pages  &ensp;<span class="fa fa-angle-right"></span>&ensp; <a href="#" class="ative">About us</a>
                 </div>
             </div>
 
@@ -44,10 +44,10 @@
             <section class="contact-section">
                 <div class="auto-container">
                     <div class="sec-title">
-                        <h2>Contact <strong>us</strong></h2>
+                        <h2>About <strong>us</strong></h2>
                     </div>
                     <div class="sec-text">
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <br>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        <p>~No one has ever become poor by Giving~<br>Our main aim is to provide a platform for volunteers who are willing to help needy schools in Sri Lanka to come to know of the schools which are in need of different resources.</p>
                     </div>
                     <div class="form">
 

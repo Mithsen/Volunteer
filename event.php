@@ -318,9 +318,9 @@ function dopdownSoprt() {
                                     <div class="content-box" style='padding-top:30px; margin-left: 100px; margin-top: -20px;'>
                                         <div class="toggle-btn"><h3 id="h4tab5" style="margin-bottom:20px; cursor:pointer;">Water/Electricity</h3></div>
                                         <div id='h4tab5b' style="display: none; padding-top:30px; margin-left: 100px; margin-top: -40px;  margin-bottom: 20px;">
-                                            <input type="checkbox" name="water" id="water">No drinking water/water not suitable for drinking purposes </br>
+                                            <input type="checkbox" name="water" id="water"> No drinking water/water not suitable for drinking purposes </br>
                                             <!--<h3>Electricity</h3>-->
-                                            <input type="checkbox" name="ele" id="ele">No electricity supply for the school
+                                            <input type="checkbox" name="ele" id="ele"> No electricity supply for the school
 
                                         </div>
                                         <div class="toggle-btn"><h3 id="h4tab6" style="margin-bottom:20px; cursor:pointer; margin-bottom: 20px;">Sanitary facilities</h3></div>
@@ -349,9 +349,9 @@ function dopdownSoprt() {
                                         <div class="toggle-btn"><h3 id="h4tab8" style="margin-bottom:20px; cursor:pointer;">Other</h3></div>
 
                                         <div id='h4tab8b' style="display: none; padding-top:30px; margin-left: 100px; margin-top: -40px;">
-                                            <input type="checkbox" name="lab" id="inf1">Lab facilities(computer labs )</br>
-                                            <input type="checkbox" name="build" id="inf2">Buildings</br>
-                                            <input type="checkbox" name="internet" id="inf3">Internet facility</br>
+                                            <input type="checkbox" name="lab" id="inf1"> Lab facilities(computer labs )</br>
+                                            <input type="checkbox" name="build" id="inf2"> Buildings</br>
+                                            <input type="checkbox" name="internet" id="inf3"> Internet facility</br>
 
                                         </div>
                                         <input type="hidden" name="eight"  value="0" id="eight">
@@ -371,12 +371,12 @@ function dopdownSoprt() {
                                         <h4>Garbage disposal</h4>
                                         <div style="margin-left: 100px;"> 
 
-                                            <input type="checkbox" name="garbage1" id="garbage1">No proper way of disposing garbage</br>
-                                            <input type="checkbox" name="garbage2" id="garbage2">No fixed dates for collection of  garbage in the area
+                                            <input type="checkbox" name="garbage1" id="garbage1"> No proper way of disposing garbage</br>
+                                            <input type="checkbox" name="garbage2" id="garbage2"> No fixed dates for collection of  garbage in the area
                                         </div>
                                         <h4 style="margin-top: 20px;">Drainage system </h4>
                                         <div style="margin-left: 100px;"> 
-                                            <input type="checkbox" name="dra" id="garbage1">Improper Drainage system 
+                                            <input type="checkbox" name="dra" id="garbage1"> Improper Drainage system 
                                         </div>
                                     </div>
                                     <input type="hidden" name="nine"  value="0" id="nine">
@@ -471,7 +471,7 @@ function dopdownSoprt() {
                 <div class="auto-container">
                     <div class="text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <h2>Are you ready to volunteer?</h2>
-                        <h3>start one of our programm today and help people in need</h3>
+                        <h3>start one of our program today and help people in need</h3>
                         <div class="line"></div>
                         <a class="theme-btn light-btn" href="#">BECOME A VOLUNTEER</a>
                         <a class="theme-btn light-btn" href="#">MAKE A DONATION</a>
